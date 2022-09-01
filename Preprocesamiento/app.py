@@ -1,6 +1,6 @@
 import pandas as pd
 
-from helpers import preprocesamiento
+from Preprocesamiento.helpers import preprocesamiento
 
 df_prueba = pd.read_csv('../dataset_validacion.csv')
 # dato_1 = df_prueba.iloc[27]
