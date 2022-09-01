@@ -78,6 +78,194 @@
   "Me siento culpable todo el tiempo":{
     "valor": 3,
     "tipo": "Sentimiento_de_culpa"
+  },
+  "No siento que estoy siendo castigado(a)":{
+    "valor": 0,
+    "tipo": "Sentimiento_de_castigo"
+  },
+  "Siento que tal vez pueda ser castigado(a)":{
+    "valor": 1,
+    "tipo": "Sentimiento_de_castigo"
+  },
+  "Espero ser castigado(a)":{
+    "valor": 2,
+    "tipo": "Sentimiento_de_castigo"
+  },
+  "Siento que estoy siendo castigado(a)":{
+    "valor": 3,
+    "tipo": "Sentimiento_de_castigo"
+  },
+  "Siento acerca de mí lo mismo que siempre":{
+    "valor": 0,
+    "tipo": "Disconformidad_con_uno_mismo"
+  },
+  "He perdido la confianza en mí mismo(a)":{
+    "valor": 1,
+    "tipo": "Disconformidad_con_uno_mismo"
+  },
+  "Estoy decepcionado conmigo mismo(a)":{
+    "valor": 2,
+    "tipo": "Disconformidad_con_uno_mismo"
+  },
+  "No me gusto a mí mismo(a)":{
+    "valor": 3,
+    "tipo": "Disconformidad_con_uno_mismo"
+  },
+  "No me critico ni me culpo más de lo habitual":{
+    "valor": 0,
+    "tipo": "Autocrítica"
+  },
+  "Estoy más crítico(a) conmigo mismo de lo que solía estarlo":{
+    "valor": 1,
+    "tipo": "Autocrítica"
+  },
+  "Me critico a mí mismo por todos mis errores":{
+    "valor": 2,
+    "tipo": "Autocrítica"
+  },
+  "Me culpo a mí mismo por todo lo malo que sucede":{
+    "valor": 3,
+    "tipo": "Autocrítica"
+  },
+  "No tengo ningún pensamiento de matarme":{
+    "valor": 0,
+    "tipo": "Pensamiento_o_deseos_suicidas"
+  },
+  "He tenido pensamientos de matarme pero no lo haría":{
+    "valor": 1,
+    "tipo": "Pensamiento_o_deseos_suicidas"
+  },
+  "Querría matarme":{
+    "valor": 2,
+    "tipo": "Pensamiento_o_deseos_suicidas"
+  },
+  "Me mataría si tuviera la oportunidad de hacerlo":{
+    "valor": 3,
+    "tipo": "Pensamiento_o_deseos_suicidas"
+  },
+  "No lloro más de lo que solía hacerlo":{
+    "valor": 0,
+    "tipo": "Llanto"
+  },
+  "Lloro más de lo que solía hacerlo":{
+    "valor": 1,
+    "tipo": "Llanto"
+  },
+  "Lloro por cualquier pequeñez":{
+    "valor": 2,
+    "tipo": "Llanto"
+  },
+  "Siento ganas de llorar pero no puedo":{
+    "valor": 3,
+    "tipo": "Llanto"
+  },
+  "No estoy más inquieto(a) o tenso(a) que lo habitual":{
+    "valor": 0,
+    "tipo": "Agitación"
+  },
+  "Me siento más inquieto o tenso(a) que lo habitual":{
+    "valor": 1,
+    "tipo": "Agitación"
+  },
+  "Estoy tan inquieto(a) o agitado(a) que me es difícil quedarme quieto":{
+    "valor": 2,
+    "tipo": "Agitación"
+  },
+  "Estoy tan inquieto(a) o agitado(a) que tengo que estar siempre en movimiento o haciendo algo":{
+    "valor": 3,
+    "tipo": "Agitación"
+  },
+  "No he perdido el interés en otras actividades o personas.":{
+    "valor": 0,
+    "tipo": "Pérdida_de_interés"
+  },
+  "Estoy menos interesado(a) que antes en otras personas o cosas":{
+    "valor": 1,
+    "tipo": "Pérdida_de_interés"
+  },
+  "He perdido casi todo el interés en otras personas o cosas":{
+    "valor": 2,
+    "tipo": "Pérdida_de_interés"
+  },
+  "Me es difícil interesarme por algo":{
+    "valor": 3,
+    "tipo": "Pérdida_de_interés"
+  },
+  "Tomo mis decisiones tan bien como siempre":{
+    "valor": 0,
+    "tipo": "Indecisión"
+  },
+  "Me resulta más difícil que de costumbre tomar decisiones":{
+    "valor": 1,
+    "tipo": "Indecisión"
+  },
+  "Encuentro mucha más dificultad que antes para tomar decisiones":{
+    "valor": 2,
+    "tipo": "Indecisión"
+  },
+  "Tengo problemas para tomar cualquier decisión":{
+    "valor": 3,
+    "tipo": "Indecisión"
+  },
+  "No siento que yo no sea valioso(a)":{
+    "valor": 0,
+    "tipo": "Desvalorización"
+  },
+  "No me considero a mí mismo tan valioso(a) y útil como solía hacerlo":{
+    "valor": 1,
+    "tipo": "Desvalorización"
+  },
+  "Me siento menos valioso cuando me comparo con otros":{
+    "valor": 2,
+    "tipo": "Desvalorización"
+  },
+  "Siento que no valgo nada":{
+    "valor": 3,
+    "tipo": "Desvalorización"
+  },
+  "Tengo tanta energía como siempre":{
+    "valor": 0,
+    "tipo": "Pérdida_de_energía"
+  },
+  "Tengo menos energía que la que solía tener":{
+    "valor": 1,
+    "tipo": "Pérdida_de_energía"
+  },
+  "No tengo suficiente energía para hacer demasiado":{
+    "valor": 2,
+    "tipo": "Pérdida_de_energía"
+  },
+  "No tengo suficiente energía para hacer nada":{
+    "valor": 3,
+    "tipo": "Pérdida_de_energía"
+  },
+  "No he experimentado ningún cambio en mis hábitos de sueño":{
+    "valor": 0,
+    "tipo": "Cambio_en_los_hábitos_de_sueño"
+  },
+  "Duermo un poco más que lo habitual":{
+    "valor": 1,
+    "tipo": "Cambio_en_los_hábitos_de_sueño"
+  },
+  "Duermo un poco menos que lo habitual":{
+    "valor": 1,
+    "tipo": "Cambio_en_los_hábitos_de_sueño2"
+  },
+  "Duermo mucho más que lo habitual":{
+    "valor": 2,
+    "tipo": "Cambio_en_los_hábitos_de_sueño2"
+  },
+  "Duermo mucho menos que lo habitual":{
+    "valor": 2,
+    "tipo": "Cambio_en_los_hábitos_de_sueño"
+  },
+  "Duermo la mayor parte del día":{
+    "valor": 3,
+    "tipo": "Cambio_en_los_hábitos_de_sueño"
+  },
+  "Me despierto 1-2 horas más temprano y no puedo volver a dormirme":{
+    "valor": 3,
+    "tipo": "Cambio_en_los_hábitos_de_sueño2"
   }
-  
+
 }
