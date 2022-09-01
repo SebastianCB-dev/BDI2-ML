@@ -1,0 +1,18 @@
+{
+  "No me siento triste": {
+    "value": 0,
+    "tipo": "Tristeza"
+  },
+  "Me siento triste gran parte del tiempo": {
+    "value": 1,
+    "tipo": "Tristeza"
+  },
+  "Estoy triste todo el tiempo": {
+    "value": 2,
+    "tipo": "Tristeza"
+  },
+  "Estoy tan triste o soy tan infeliz que no puedo soportarlo": {
+    "value": 3,
+    "tipo": "Tristeza"
+  }
+}
