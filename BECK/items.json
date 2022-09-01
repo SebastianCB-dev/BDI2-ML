@@ -18,5 +18,66 @@
   "No estoy No estoy desalentado respecto de mi futuro": {
     "valor": 0,
     "tipo": "Pesimismo"
+  },
+  "Me siento más desalentado(a) respecto de mi futuro de lo que solía estarlo":{
+    "valor": 1,
+    "tipo": "Pesimismo"
+  },
+  "No espero que las cosas funcionen para mí":{
+    "valor": 2,
+    "tipo": "Pesimismo"
+  },
+  "Siento que no hay esperanza para mi futuro y que solo puede empeorar":{
+    "valor": 3,
+    "tipo": "Pesimismo"
+  },
+  "No me siento como un(a) fracasado(a)":{
+    "valor": 0,
+    "tipo": "Fracaso"
+  },
+  "He fracasado más de lo que hubiera debido":{
+    "valor": 1,
+    "tipo": "Fracaso"
+  },
+  "Cuando miro hacia atrás veo muchos fracasos":{
+    "valor": 2,
+    "tipo": "Fracaso"
+  },
+  "Siento que como persona soy un fracaso total":{
+    "valor": 3,
+    "tipo": "Fracaso"
+  },
+  "Obtengo tanto placer como siempre por las cosas de las que disfruto":{
+    "valor": 0,
+    "tipo": "Perdia_de_placer"
+  },
+  "No disfruto tanto de las cosas como solía hacerlo":{
+    "valor": 1,
+    "tipo": "Perdia_de_placer"
+  },
+  "Obtengo muy poco placer de las cosas de las que solía disfrutar":{
+    "valor": 2,
+    "tipo": "Perdia_de_placer"
+  },
+  "No puedo obtener ningún placer de las cosas de las que solía disfrutar":{
+    "valor": 3,
+    "tipo": "Perdia_de_placer"
+  },
+  "No me siento particularmente culpable":{
+    "valor": 0,
+    "tipo": "Sentimiento_de_culpa"
+  },
+  "Me siento culpable respecto de varias cosas que he hecho o que debería haber hecho":{
+    "valor": 1,
+    "tipo": "Sentimiento_de_culpa"
+  },
+  "Me siento bastante culpable la mayor parte del tiempo":{
+    "valor": 2,
+    "tipo": "Sentimiento_de_culpa"
+  },
+  "Me siento culpable todo el tiempo":{
+    "valor": 3,
+    "tipo": "Sentimiento_de_culpa"
   }
+  
 }
