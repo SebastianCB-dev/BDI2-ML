@@ -1,18 +1,22 @@
 {
   "No me siento triste": {
-    "value": 0,
+    "valor": 0,
     "tipo": "Tristeza"
   },
   "Me siento triste gran parte del tiempo": {
-    "value": 1,
+    "valor": 1,
     "tipo": "Tristeza"
   },
   "Estoy triste todo el tiempo": {
-    "value": 2,
+    "valor": 2,
     "tipo": "Tristeza"
   },
   "Estoy tan triste o soy tan infeliz que no puedo soportarlo": {
-    "value": 3,
+    "valor": 3,
     "tipo": "Tristeza"
+  },
+  "No estoy No estoy desalentado respecto de mi futuro": {
+    "valor": 0,
+    "tipo": "Pesimismo"
   }
 }
