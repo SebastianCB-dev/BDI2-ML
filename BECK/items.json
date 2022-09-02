@@ -129,7 +129,7 @@
   },
   "No tengo ningún pensamiento de matarme": {
     "valor": 0,
-    "tipo": "Pensamiento_o_deseos_suicidas"
+    "tipo": "Pensamiento o deseos suicidas"
   },
   "He tenido pensamientos de matarme pero no lo haría": {
     "valor": 1,
