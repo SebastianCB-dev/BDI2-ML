@@ -19,253 +19,344 @@
     "valor": 0,
     "tipo": "Pesimismo"
   },
-  "Me siento más desalentado(a) respecto de mi futuro de lo que solía estarlo":{
+  "Me siento más desalentado respecto de mi futuro de lo que solía estarlo": {
     "valor": 1,
     "tipo": "Pesimismo"
   },
-  "No espero que las cosas funcionen para mí":{
+  "No espero que las cosas funcionen para mí": {
     "valor": 2,
     "tipo": "Pesimismo"
   },
-  "Siento que no hay esperanza para mi futuro y que solo puede empeorar":{
+  "Siento que no hay esperanza para mi futuro y que solo puede empeorar": {
     "valor": 3,
     "tipo": "Pesimismo"
   },
-  "No me siento como un(a) fracasado(a)":{
+  "No me siento como un fracasado": {
     "valor": 0,
     "tipo": "Fracaso"
   },
-  "He fracasado más de lo que hubiera debido":{
+  "He fracasado más de lo que hubiera debido": {
     "valor": 1,
     "tipo": "Fracaso"
   },
-  "Cuando miro hacia atrás veo muchos fracasos":{
+  "Cuando miro hacia atrás veo muchos fracasos": {
     "valor": 2,
     "tipo": "Fracaso"
   },
-  "Siento que como persona soy un fracaso total":{
+  "Siento que como persona soy un fracaso total": {
     "valor": 3,
     "tipo": "Fracaso"
   },
-  "Obtengo tanto placer como siempre por las cosas de las que disfruto":{
+  "Obtengo tanto placer como siempre por las cosas de las que disfruto": {
     "valor": 0,
-    "tipo": "Perdia_de_placer"
+    "tipo": "Pérdida de placer"
   },
-  "No disfruto tanto de las cosas como solía hacerlo":{
+  "No disfruto tanto de las cosas como solía hacerlo": {
     "valor": 1,
-    "tipo": "Perdia_de_placer"
+    "tipo": "Pérdida de placer"
   },
-  "Obtengo muy poco placer de las cosas de las que solía disfrutar":{
+  "Obtengo muy poco placer de las cosas de las que solía disfrutar": {
     "valor": 2,
-    "tipo": "Perdia_de_placer"
+    "tipo": "Pérdida de placer"
   },
-  "No puedo obtener ningún placer de las cosas de las que solía disfrutar":{
+  "No puedo obtener ningún placer de las cosas de las que solía disfrutar": {
     "valor": 3,
-    "tipo": "Perdia_de_placer"
+    "tipo": "Pérdida de placer"
   },
-  "No me siento particularmente culpable":{
+  "No me siento particularmente culpable": {
     "valor": 0,
-    "tipo": "Sentimiento_de_culpa"
+    "tipo": "Sentimiento de culpa"
   },
-  "Me siento culpable respecto de varias cosas que he hecho o que debería haber hecho":{
+  "Me siento culpable respecto de varias cosas que he hecho o que debería haber hecho": {
     "valor": 1,
-    "tipo": "Sentimiento_de_culpa"
+    "tipo": "Sentimiento de culpa"
   },
-  "Me siento bastante culpable la mayor parte del tiempo":{
+  "Me siento bastante culpable la mayor parte del tiempo": {
     "valor": 2,
-    "tipo": "Sentimiento_de_culpa"
+    "tipo": "Sentimiento de culpa"
   },
-  "Me siento culpable todo el tiempo":{
+  "Me siento culpable todo el tiempo": {
     "valor": 3,
-    "tipo": "Sentimiento_de_culpa"
+    "tipo": "Sentimiento de culpa"
   },
-  "No siento que estoy siendo castigado(a)":{
+  "No siento que estoy siendo castigado(a)": {
     "valor": 0,
-    "tipo": "Sentimiento_de_castigo"
+    "tipo": "Sentimiento de castigo"
   },
-  "Siento que tal vez pueda ser castigado(a)":{
+  "Siento que tal vez pueda ser castigado(a)": {
     "valor": 1,
-    "tipo": "Sentimiento_de_castigo"
+    "tipo": "Sentimiento de castigo"
   },
-  "Espero ser castigado(a)":{
+  "Espero ser castigado(a)": {
     "valor": 2,
-    "tipo": "Sentimiento_de_castigo"
+    "tipo": "Sentimiento de castigo"
   },
-  "Siento que estoy siendo castigado(a)":{
+  "Siento que estoy siendo castigado(a)": {
     "valor": 3,
-    "tipo": "Sentimiento_de_castigo"
+    "tipo": "Sentimiento de castigo"
   },
-  "Siento acerca de mí lo mismo que siempre":{
+  "Siento acerca de mí lo mismo que siempre": {
     "valor": 0,
-    "tipo": "Disconformidad_con_uno_mismo"
+    "tipo": "Disconformidad con uno mismo"
   },
-  "He perdido la confianza en mí mismo(a)":{
+  "He perdido la confianza en mí mismo(a)": {
     "valor": 1,
-    "tipo": "Disconformidad_con_uno_mismo"
+    "tipo": "Disconformidad con uno mismo"
   },
-  "Estoy decepcionado conmigo mismo(a)":{
+  "Estoy decepcionado conmigo mismo(a)": {
     "valor": 2,
-    "tipo": "Disconformidad_con_uno_mismo"
+    "tipo": "Disconformidad con uno mismo"
   },
-  "No me gusto a mí mismo(a)":{
+  "No me gusto a mí mismo(a)": {
     "valor": 3,
-    "tipo": "Disconformidad_con_uno_mismo"
+    "tipo": "Disconformidad con uno mismo"
   },
-  "No me critico ni me culpo más de lo habitual":{
+  "No me critico ni me culpo más de lo habitual": {
     "valor": 0,
     "tipo": "Autocrítica"
   },
-  "Estoy más crítico(a) conmigo mismo de lo que solía estarlo":{
+  "Estoy más crítico(a) conmigo mismo de lo que solía estarlo": {
     "valor": 1,
     "tipo": "Autocrítica"
   },
-  "Me critico a mí mismo por todos mis errores":{
+  "Me critico a mí mismo por todos mis errores": {
     "valor": 2,
     "tipo": "Autocrítica"
   },
-  "Me culpo a mí mismo por todo lo malo que sucede":{
+  "Me culpo a mí mismo por todo lo malo que sucede": {
     "valor": 3,
     "tipo": "Autocrítica"
   },
-  "No tengo ningún pensamiento de matarme":{
+  "No tengo ningún pensamiento de matarme": {
     "valor": 0,
     "tipo": "Pensamiento_o_deseos_suicidas"
   },
-  "He tenido pensamientos de matarme pero no lo haría":{
+  "He tenido pensamientos de matarme pero no lo haría": {
     "valor": 1,
-    "tipo": "Pensamiento_o_deseos_suicidas"
+    "tipo": "Pensamiento o deseos suicidas"
   },
-  "Querría matarme":{
+  "Querría matarme": {
     "valor": 2,
-    "tipo": "Pensamiento_o_deseos_suicidas"
+    "tipo": "Pensamiento o deseos suicidas"
   },
-  "Me mataría si tuviera la oportunidad de hacerlo":{
+  "Me mataría si tuviera la oportunidad de hacerlo": {
     "valor": 3,
-    "tipo": "Pensamiento_o_deseos_suicidas"
+    "tipo": "Pensamiento o deseos suicidas"
   },
-  "No lloro más de lo que solía hacerlo":{
+  "No lloro más de lo que solía hacerlo": {
     "valor": 0,
     "tipo": "Llanto"
   },
-  "Lloro más de lo que solía hacerlo":{
+  "Lloro más de lo que solía hacerlo": {
     "valor": 1,
     "tipo": "Llanto"
   },
-  "Lloro por cualquier pequeñez":{
+  "Lloro por cualquier pequeñez": {
     "valor": 2,
     "tipo": "Llanto"
   },
-  "Siento ganas de llorar pero no puedo":{
+  "Siento ganas de llorar pero no puedo": {
     "valor": 3,
     "tipo": "Llanto"
   },
-  "No estoy más inquieto(a) o tenso(a) que lo habitual":{
+  "No estoy más inquieto(a) o tenso(a) que lo habitual": {
     "valor": 0,
     "tipo": "Agitación"
   },
-  "Me siento más inquieto o tenso(a) que lo habitual":{
+  "Me siento más inquieto o tenso(a) que lo habitual": {
     "valor": 1,
     "tipo": "Agitación"
   },
-  "Estoy tan inquieto(a) o agitado(a) que me es difícil quedarme quieto":{
+  "Estoy tan inquieto(a) o agitado(a) que me es difícil quedarme quieto": {
     "valor": 2,
     "tipo": "Agitación"
   },
-  "Estoy tan inquieto(a) o agitado(a) que tengo que estar siempre en movimiento o haciendo algo":{
+  "Estoy tan inquieto(a) o agitado(a) que tengo que estar siempre en movimiento o haciendo algo": {
     "valor": 3,
     "tipo": "Agitación"
   },
-  "No he perdido el interés en otras actividades o personas.":{
+  "No he perdido el interés en otras actividades o personas.": {
     "valor": 0,
-    "tipo": "Pérdida_de_interés"
+    "tipo": "Pérdida de interés"
   },
-  "Estoy menos interesado(a) que antes en otras personas o cosas":{
+  "Estoy menos interesado(a) que antes en otras personas o cosas": {
     "valor": 1,
-    "tipo": "Pérdida_de_interés"
+    "tipo": "Pérdida de interés"
   },
-  "He perdido casi todo el interés en otras personas o cosas":{
+  "He perdido casi todo el interés en otras personas o cosas": {
     "valor": 2,
-    "tipo": "Pérdida_de_interés"
+    "tipo": "Pérdida de interés"
   },
-  "Me es difícil interesarme por algo":{
+  "Me es difícil interesarme por algo": {
     "valor": 3,
-    "tipo": "Pérdida_de_interés"
+    "tipo": "Pérdida de interés"
   },
-  "Tomo mis decisiones tan bien como siempre":{
+  "Tomo mis decisiones tan bien como siempre": {
     "valor": 0,
     "tipo": "Indecisión"
   },
-  "Me resulta más difícil que de costumbre tomar decisiones":{
+  "Me resulta más difícil que de costumbre tomar decisiones": {
     "valor": 1,
     "tipo": "Indecisión"
   },
-  "Encuentro mucha más dificultad que antes para tomar decisiones":{
+  "Encuentro mucha más dificultad que antes para tomar decisiones": {
     "valor": 2,
     "tipo": "Indecisión"
   },
-  "Tengo problemas para tomar cualquier decisión":{
+  "Tengo problemas para tomar cualquier decisión": {
     "valor": 3,
     "tipo": "Indecisión"
   },
-  "No siento que yo no sea valioso(a)":{
+  "No siento que yo no sea valioso(a)": {
     "valor": 0,
     "tipo": "Desvalorización"
   },
-  "No me considero a mí mismo tan valioso(a) y útil como solía hacerlo":{
+  "No me considero a mí mismo tan valioso(a) y útil como solía hacerlo": {
     "valor": 1,
     "tipo": "Desvalorización"
   },
-  "Me siento menos valioso cuando me comparo con otros":{
+  "Me siento menos valioso cuando me comparo con otros": {
     "valor": 2,
     "tipo": "Desvalorización"
   },
-  "Siento que no valgo nada":{
+  "Siento que no valgo nada": {
     "valor": 3,
     "tipo": "Desvalorización"
   },
-  "Tengo tanta energía como siempre":{
+  "Tengo tanta energía como siempre": {
     "valor": 0,
-    "tipo": "Pérdida_de_energía"
+    "tipo": "Pérdida de energía"
   },
-  "Tengo menos energía que la que solía tener":{
+  "Tengo menos energía que la que solía tener": {
     "valor": 1,
-    "tipo": "Pérdida_de_energía"
+    "tipo": "Pérdida de energía"
   },
-  "No tengo suficiente energía para hacer demasiado":{
+  "No tengo suficiente energía para hacer demasiado": {
     "valor": 2,
-    "tipo": "Pérdida_de_energía"
+    "tipo": "Pérdida de energía"
   },
-  "No tengo suficiente energía para hacer nada":{
+  "No tengo suficiente energía para hacer nada": {
     "valor": 3,
-    "tipo": "Pérdida_de_energía"
+    "tipo": "Pérdida de energía"
   },
-  "No he experimentado ningún cambio en mis hábitos de sueño":{
+  "No he experimentado ningún cambio en mis hábitos de sueño": {
     "valor": 0,
-    "tipo": "Cambio_en_los_hábitos_de_sueño"
+    "tipo": "Cambio en los habitos de sueño"
   },
-  "Duermo un poco más que lo habitual":{
+  "Duermo un poco más que lo habitual": {
     "valor": 1,
-    "tipo": "Cambio_en_los_hábitos_de_sueño"
+    "tipo": "Cambio en los habitos de sueño"
   },
-  "Duermo un poco menos que lo habitual":{
+  "Duermo un poco menos que lo habitual": {
     "valor": 1,
-    "tipo": "Cambio_en_los_hábitos_de_sueño2"
+    "tipo": "Cambio en los habitos de sueño"
   },
-  "Duermo mucho más que lo habitual":{
+  "Duermo mucho más que lo habitual": {
     "valor": 2,
-    "tipo": "Cambio_en_los_hábitos_de_sueño2"
+    "tipo": "Cambio en los habitos de sueño"
   },
-  "Duermo mucho menos que lo habitual":{
+  "Duermo mucho menos que lo habitual": {
     "valor": 2,
-    "tipo": "Cambio_en_los_hábitos_de_sueño"
+    "tipo": "Cambio en los habitos de sueño"
   },
-  "Duermo la mayor parte del día":{
+  "Duermo la mayor parte del día": {
     "valor": 3,
-    "tipo": "Cambio_en_los_hábitos_de_sueño"
+    "tipo": "Cambio en los habitos de sueño"
   },
-  "Me despierto 1-2 horas más temprano y no puedo volver a dormirme":{
+  "Me despierto 1-2 horas más temprano y no puedo volver a dormirme": {
     "valor": 3,
-    "tipo": "Cambio_en_los_hábitos_de_sueño2"
+    "tipo": "Cambio en los habitos de sueño"
+  },
+  "No estoy más irritable que lo habitual": {
+    "valor": 0,
+    "tipo": "Irritabilidad"
+  },
+  "Estoy más irritable que lo habitual": {
+    "valor": 1,
+    "tipo": "Irritabilidad"
+  },
+  "Estoy mucho más irritable que lo habitual": {
+    "valor": 2,
+    "tipo": "Irritabilidad"
+  },
+  "Estoy irritable todo el tiempo": {
+    "valor": 3,
+    "tipo": "Irritabilidad"
+  },
+  "No he experimentado ningún cambio en mi apetito": {
+    "valor": 0,
+    "tipo": "Cambios en el apetito"
+  },
+  "Mi apetito es un poco menor que lo habitual": {
+    "valor": 1,
+    "tipo": "Cambios en el apetito"
+  },
+  "Mi apetito es un poco mayor que lo habitual": {
+    "valor": 1,
+    "tipo": "Cambios en el apetito"
+  },
+  "Mi apetito es mucho menor que antes": {
+    "valor": 2,
+    "tipo": "Cambios en el apetito"
+  },
+  "Mi apetito es mucho mayor que antes": {
+    "valor": 2,
+    "tipo": "Cambios en el apetito"
+  },
+  "No tengo apetito en absoluto": {
+    "valor": 3,
+    "tipo": "Cambios en el apetito"
+  },
+  "Quiero comer todo el tiempo": {
+    "valor": 3,
+    "tipo": "Cambios en el apetito"
+  },
+  "Puedo concentrarme tan bien como siempre": {
+    "valor": 0,
+    "tipo": "Dificultad de concentración"
+  },
+  "No puedo concentrarme tan bien como habitualmente": {
+    "valor": 1,
+    "tipo": "Dificultad de concentración"
+  },
+  "Me es difícil mantener la mente en algo por mucho tiempo": {
+    "valor": 2,
+    "tipo": "Dificultad de concentración"
+  },
+  "Encuentro que no puedo concentrarme en nada": {
+    "valor": 3,
+    "tipo": "Dificultad de concentración"
+  },
+  "No estoy más cansado(a) o fatigado(a) que lo habitual": {
+    "valor": 0,
+    "tipo": "Cansancio o fatiga"
+  },
+  "Me fatigo o me canso más fácilmente que lo habitual": {
+    "valor": 1,
+    "tipo": "Cansancio o fatiga"
+  },
+  "Estoy demasiado fatigado(a) o cansado(a) para hacer muchas de las cosas que solía hacer": {
+    "valor": 2,
+    "tipo": "Cansancio o fatiga"
+  },
+  "Estoy demasiado cansado(a) o fatigado(a) para hacer la mayoría de las cosas que solía hacer": {
+    "valor": 3,
+    "tipo": "Cansancio o fatiga"
+  },
+  "No he notado ningún cambio reciente en mi interés por el sexo": {
+    "valor": 0,
+    "tipo": "Pérdida de interés en el sexo"
+  },
+  "Estoy menos interesado(a) en el sexo de lo que solía estarlo": {
+    "valor": 1,
+    "tipo": "Pérdida de interés en el sexo"
+  },
+  "Ahora estoy mucho menos interesado(a) en el sexo": {
+    "valor": 2,
+    "tipo": "Pérdida de interés en el sexo"
+  },
+  "He perdido completamente el interés en el sexo": {
+    "valor": 3,
+    "tipo": "Pérdida de interés en el sexo"
   }
-
 }
