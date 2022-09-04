@@ -1,362 +1,134 @@
 {
-  "No me siento triste": {
-    "valor": 0,
-    "tipo": "Tristeza"
-  },
-  "Me siento triste gran parte del tiempo": {
-    "valor": 1,
-    "tipo": "Tristeza"
-  },
-  "Estoy triste todo el tiempo": {
-    "valor": 2,
-    "tipo": "Tristeza"
-  },
-  "Estoy tan triste o soy tan infeliz que no puedo soportarlo": {
-    "valor": 3,
-    "tipo": "Tristeza"
-  },
-  "No estoy No estoy desalentado respecto de mi futuro": {
-    "valor": 0,
-    "tipo": "Pesimismo"
-  },
-  "Me siento más desalentado respecto de mi futuro de lo que solía estarlo": {
-    "valor": 1,
-    "tipo": "Pesimismo"
-  },
-  "No espero que las cosas funcionen para mí": {
-    "valor": 2,
-    "tipo": "Pesimismo"
-  },
-  "Siento que no hay esperanza para mi futuro y que solo puede empeorar": {
-    "valor": 3,
-    "tipo": "Pesimismo"
-  },
-  "No me siento como un fracasado": {
-    "valor": 0,
-    "tipo": "Fracaso"
-  },
-  "He fracasado más de lo que hubiera debido": {
-    "valor": 1,
-    "tipo": "Fracaso"
-  },
-  "Cuando miro hacia atrás veo muchos fracasos": {
-    "valor": 2,
-    "tipo": "Fracaso"
-  },
-  "Siento que como persona soy un fracaso total": {
-    "valor": 3,
-    "tipo": "Fracaso"
-  },
-  "Obtengo tanto placer como siempre por las cosas de las que disfruto": {
-    "valor": 0,
-    "tipo": "Pérdida de placer"
-  },
-  "No disfruto tanto de las cosas como solía hacerlo": {
-    "valor": 1,
-    "tipo": "Pérdida de placer"
-  },
-  "Obtengo muy poco placer de las cosas de las que solía disfrutar": {
-    "valor": 2,
-    "tipo": "Pérdida de placer"
-  },
-  "No puedo obtener ningún placer de las cosas de las que solía disfrutar": {
-    "valor": 3,
-    "tipo": "Pérdida de placer"
-  },
-  "No me siento particularmente culpable": {
-    "valor": 0,
-    "tipo": "Sentimiento de culpa"
-  },
-  "Me siento culpable respecto de varias cosas que he hecho o que debería haber hecho": {
-    "valor": 1,
-    "tipo": "Sentimiento de culpa"
-  },
-  "Me siento bastante culpable la mayor parte del tiempo": {
-    "valor": 2,
-    "tipo": "Sentimiento de culpa"
-  },
-  "Me siento culpable todo el tiempo": {
-    "valor": 3,
-    "tipo": "Sentimiento de culpa"
-  },
-  "No siento que estoy siendo castigado(a)": {
-    "valor": 0,
-    "tipo": "Sentimiento de castigo"
-  },
-  "Siento que tal vez pueda ser castigado(a)": {
-    "valor": 1,
-    "tipo": "Sentimiento de castigo"
-  },
-  "Espero ser castigado(a)": {
-    "valor": 2,
-    "tipo": "Sentimiento de castigo"
-  },
-  "Siento que estoy siendo castigado(a)": {
-    "valor": 3,
-    "tipo": "Sentimiento de castigo"
-  },
-  "Siento acerca de mí lo mismo que siempre": {
-    "valor": 0,
-    "tipo": "Disconformidad con uno mismo"
-  },
-  "He perdido la confianza en mí mismo(a)": {
-    "valor": 1,
-    "tipo": "Disconformidad con uno mismo"
-  },
-  "Estoy decepcionado conmigo mismo(a)": {
-    "valor": 2,
-    "tipo": "Disconformidad con uno mismo"
-  },
-  "No me gusto a mí mismo(a)": {
-    "valor": 3,
-    "tipo": "Disconformidad con uno mismo"
-  },
-  "No me critico ni me culpo más de lo habitual": {
-    "valor": 0,
-    "tipo": "Autocrítica"
-  },
-  "Estoy más crítico(a) conmigo mismo de lo que solía estarlo": {
-    "valor": 1,
-    "tipo": "Autocrítica"
-  },
-  "Me critico a mí mismo por todos mis errores": {
-    "valor": 2,
-    "tipo": "Autocrítica"
-  },
-  "Me culpo a mí mismo por todo lo malo que sucede": {
-    "valor": 3,
-    "tipo": "Autocrítica"
-  },
-  "No tengo ningún pensamiento de matarme": {
-    "valor": 0,
-    "tipo": "Pensamiento o deseos suicidas"
-  },
-  "He tenido pensamientos de matarme pero no lo haría": {
-    "valor": 1,
-    "tipo": "Pensamiento o deseos suicidas"
-  },
-  "Querría matarme": {
-    "valor": 2,
-    "tipo": "Pensamiento o deseos suicidas"
-  },
-  "Me mataría si tuviera la oportunidad de hacerlo": {
-    "valor": 3,
-    "tipo": "Pensamiento o deseos suicidas"
-  },
-  "No lloro más de lo que solía hacerlo": {
-    "valor": 0,
-    "tipo": "Llanto"
-  },
-  "Lloro más de lo que solía hacerlo": {
-    "valor": 1,
-    "tipo": "Llanto"
-  },
-  "Lloro por cualquier pequeñez": {
-    "valor": 2,
-    "tipo": "Llanto"
-  },
-  "Siento ganas de llorar pero no puedo": {
-    "valor": 3,
-    "tipo": "Llanto"
-  },
-  "No estoy más inquieto(a) o tenso(a) que lo habitual": {
-    "valor": 0,
-    "tipo": "Agitación"
-  },
-  "Me siento más inquieto o tenso(a) que lo habitual": {
-    "valor": 1,
-    "tipo": "Agitación"
-  },
-  "Estoy tan inquieto(a) o agitado(a) que me es difícil quedarme quieto": {
-    "valor": 2,
-    "tipo": "Agitación"
-  },
-  "Estoy tan inquieto(a) o agitado(a) que tengo que estar siempre en movimiento o haciendo algo": {
-    "valor": 3,
-    "tipo": "Agitación"
-  },
-  "No he perdido el interés en otras actividades o personas.": {
-    "valor": 0,
-    "tipo": "Pérdida de interés"
-  },
-  "Estoy menos interesado(a) que antes en otras personas o cosas": {
-    "valor": 1,
-    "tipo": "Pérdida de interés"
-  },
-  "He perdido casi todo el interés en otras personas o cosas": {
-    "valor": 2,
-    "tipo": "Pérdida de interés"
-  },
-  "Me es difícil interesarme por algo": {
-    "valor": 3,
-    "tipo": "Pérdida de interés"
-  },
-  "Tomo mis decisiones tan bien como siempre": {
-    "valor": 0,
-    "tipo": "Indecisión"
-  },
-  "Me resulta más difícil que de costumbre tomar decisiones": {
-    "valor": 1,
-    "tipo": "Indecisión"
-  },
-  "Encuentro mucha más dificultad que antes para tomar decisiones": {
-    "valor": 2,
-    "tipo": "Indecisión"
-  },
-  "Tengo problemas para tomar cualquier decisión": {
-    "valor": 3,
-    "tipo": "Indecisión"
-  },
-  "No siento que yo no sea valioso(a)": {
-    "valor": 0,
-    "tipo": "Desvalorización"
-  },
-  "No me considero a mí mismo tan valioso(a) y útil como solía hacerlo": {
-    "valor": 1,
-    "tipo": "Desvalorización"
-  },
-  "Me siento menos valioso cuando me comparo con otros": {
-    "valor": 2,
-    "tipo": "Desvalorización"
-  },
-  "Siento que no valgo nada": {
-    "valor": 3,
-    "tipo": "Desvalorización"
-  },
-  "Tengo tanta energía como siempre": {
-    "valor": 0,
-    "tipo": "Pérdida de energía"
-  },
-  "Tengo menos energía que la que solía tener": {
-    "valor": 1,
-    "tipo": "Pérdida de energía"
-  },
-  "No tengo suficiente energía para hacer demasiado": {
-    "valor": 2,
-    "tipo": "Pérdida de energía"
-  },
-  "No tengo suficiente energía para hacer nada": {
-    "valor": 3,
-    "tipo": "Pérdida de energía"
-  },
-  "No he experimentado ningún cambio en mis hábitos de sueño": {
-    "valor": 0,
-    "tipo": "Cambio en los habitos de sueño"
-  },
-  "Duermo un poco más que lo habitual": {
-    "valor": 1,
-    "tipo": "Cambio en los habitos de sueño"
-  },
-  "Duermo un poco menos que lo habitual": {
-    "valor": 1,
-    "tipo": "Cambio en los habitos de sueño"
-  },
-  "Duermo mucho más que lo habitual": {
-    "valor": 2,
-    "tipo": "Cambio en los habitos de sueño"
-  },
-  "Duermo mucho menos que lo habitual": {
-    "valor": 2,
-    "tipo": "Cambio en los habitos de sueño"
-  },
-  "Duermo la mayor parte del día": {
-    "valor": 3,
-    "tipo": "Cambio en los habitos de sueño"
-  },
-  "Me despierto 1-2 horas más temprano y no puedo volver a dormirme": {
-    "valor": 3,
-    "tipo": "Cambio en los habitos de sueño"
-  },
-  "No estoy más irritable que lo habitual": {
-    "valor": 0,
-    "tipo": "Irritabilidad"
-  },
-  "Estoy más irritable que lo habitual": {
-    "valor": 1,
-    "tipo": "Irritabilidad"
-  },
-  "Estoy mucho más irritable que lo habitual": {
-    "valor": 2,
-    "tipo": "Irritabilidad"
-  },
-  "Estoy irritable todo el tiempo": {
-    "valor": 3,
-    "tipo": "Irritabilidad"
-  },
-  "No he experimentado ningún cambio en mi apetito": {
-    "valor": 0,
-    "tipo": "Cambios en el apetito"
-  },
-  "Mi apetito es un poco menor que lo habitual": {
-    "valor": 1,
-    "tipo": "Cambios en el apetito"
-  },
-  "Mi apetito es un poco mayor que lo habitual": {
-    "valor": 1,
-    "tipo": "Cambios en el apetito"
-  },
-  "Mi apetito es mucho menor que antes": {
-    "valor": 2,
-    "tipo": "Cambios en el apetito"
-  },
-  "Mi apetito es mucho mayor que antes": {
-    "valor": 2,
-    "tipo": "Cambios en el apetito"
-  },
-  "No tengo apetito en absoluto": {
-    "valor": 3,
-    "tipo": "Cambios en el apetito"
-  },
-  "Quiero comer todo el tiempo": {
-    "valor": 3,
-    "tipo": "Cambios en el apetito"
-  },
-  "Puedo concentrarme tan bien como siempre": {
-    "valor": 0,
-    "tipo": "Dificultad de concentración"
-  },
-  "No puedo concentrarme tan bien como habitualmente": {
-    "valor": 1,
-    "tipo": "Dificultad de concentración"
-  },
-  "Me es difícil mantener la mente en algo por mucho tiempo": {
-    "valor": 2,
-    "tipo": "Dificultad de concentración"
-  },
-  "Encuentro que no puedo concentrarme en nada": {
-    "valor": 3,
-    "tipo": "Dificultad de concentración"
-  },
-  "No estoy más cansado(a) o fatigado(a) que lo habitual": {
-    "valor": 0,
-    "tipo": "Cansancio o fatiga"
-  },
-  "Me fatigo o me canso más fácilmente que lo habitual": {
-    "valor": 1,
-    "tipo": "Cansancio o fatiga"
-  },
-  "Estoy demasiado fatigado(a) o cansado(a) para hacer muchas de las cosas que solía hacer": {
-    "valor": 2,
-    "tipo": "Cansancio o fatiga"
-  },
-  "Estoy demasiado cansado(a) o fatigado(a) para hacer la mayoría de las cosas que solía hacer": {
-    "valor": 3,
-    "tipo": "Cansancio o fatiga"
-  },
-  "No he notado ningún cambio reciente en mi interés por el sexo": {
-    "valor": 0,
-    "tipo": "Pérdida de interés en el sexo"
-  },
-  "Estoy menos interesado(a) en el sexo de lo que solía estarlo": {
-    "valor": 1,
-    "tipo": "Pérdida de interés en el sexo"
-  },
-  "Ahora estoy mucho menos interesado(a) en el sexo": {
-    "valor": 2,
-    "tipo": "Pérdida de interés en el sexo"
-  },
-  "He perdido completamente el interés en el sexo": {
-    "valor": 3,
-    "tipo": "Pérdida de interés en el sexo"
+  "Tristeza": {
+    "No me siento triste": 0,
+    "Me siento triste gran parte del tiempo": 1,
+    "Estoy triste todo el tiempo": 2,
+    "Estoy tan triste o soy tan infeliz que no puedo soportarlo": 3
+  },
+  "Pesimismo": {
+    "No estoy No estoy desalentado respecto de mi futuro": 0,
+    "Me siento más desalentado respecto de mi futuro de lo que solía estarlo": 1,
+    "No espero que las cosas funcionen para mí": 2,
+    "Siento que no hay esperanza para mi futuro y que solo puede empeorar": 3
+  },
+  "Fracaso": {
+    "No me siento como un fracasado": 0,
+    "He fracasado más de lo que hubiera debido": 1,
+    "Cuando miro hacia atrás veo muchos fracasos": 2,
+    "Siento que como persona soy un fracaso total": 3
+  },
+  "Pérdida de placer": {
+    "Obtengo tanto placer como siempre por las cosas de las que disfruto": 0,
+    "No disfruto tanto de las cosas como solía hacerlo": 1,
+    "Obtengo muy poco placer de las cosas de las que solía disfrutar": 2,
+    "No puedo obtener ningún placer de las cosas de las que solía disfrutar": 3
+  },
+  "Sentimiento de culpa": {
+    "No me siento particularmente culpable": 0,
+    "Me siento culpable respecto de varias cosas que he hecho o que debería haber hecho": 1,
+    "Me siento bastante culpable la mayor parte del tiempo": 2,
+    "Me siento culpable todo el tiempo": 3
+  },
+  "Sentimiento de castigo": {
+    "No siento que estoy siendo castigado(a)": 0,
+    "Siento que tal vez pueda ser castigado(a)": 1,
+    "Espero ser castigado(a)": 2,
+    "Siento que estoy siendo castigado(a)": 3
+  },
+  "Disconformidad con uno mismo": {
+    "Siento acerca de mí lo mismo que siempre": 0,
+    "He perdido la confianza en mí mismo(a)": 1,
+    "Estoy decepcionado conmigo mismo(a)": 2,
+    "No me gusto a mí mismo(a)": 3
+  },
+  "Autocrítica": {
+    "No me critico ni me culpo más de lo habitual": 0,
+    "Estoy más crítico(a) conmigo mismo de lo que solía estarlo": 1,
+    "Me critico a mí mismo por todos mis errores": 2,
+    "Me culpo a mí mismo por todo lo malo que sucede": 3
+  },
+  "Pensamiento o deseos suicidas": {
+    "No tengo ningún pensamiento de matarme": 0,
+    "He tenido pensamientos de matarme pero no lo haría": 1,
+    "Querría matarme": 2,
+    "Me mataría si tuviera la oportunidad de hacerlo": 3
+  },
+  "Llanto": {
+    "No lloro más de lo que solía hacerlo": 0,
+    "Lloro más de lo que solía hacerlo": 1,
+    "Lloro por cualquier pequeñez": 2,
+    "Siento ganas de llorar pero no puedo": 3
+  },
+  "Agitación": {
+    "No estoy más inquieto(a) o tenso(a) que lo habitual": 0,
+    "Me siento más inquieto o tenso(a) que lo habitual": 1,
+    "Estoy tan inquieto(a) o agitado(a) que me es difícil quedarme quieto": 3,
+    "Estoy tan inquieto(a) o agitado(a) que tengo que estar siempre en movimiento o haciendo algo": 4
+  },
+  "Pérdida de interés": {
+    "No he perdido el interés en otras actividades o personas.": 0,
+    "Estoy menos interesado(a) que antes en otras personas o cosas": 1,
+    "He perdido casi todo el interés en otras personas o cosas": 2,
+    "Me es difícil interesarme por algo": 3
+  },
+  "Indecisión": {
+    "Tomo mis decisiones tan bien como siempre": 0,
+    "Me resulta más difícil que de costumbre tomar decisiones": 1,
+    "Encuentro mucha más dificultad que antes para tomar decisiones": 2,
+    "Tengo problemas para tomar cualquier decisión": 3
+  },
+  "Desvalorización": {
+    "No siento que yo no sea valioso(a)": 0,
+    "No me considero a mí mismo tan valioso(a) y útil como solía hacerlo": 1,
+    "Me siento menos valioso cuando me comparo con otros": 2,
+    "Siento que no valgo nada": 3
+  },
+  "Pérdida de energía": {
+    "Tengo tanta energía como siempre": 0,
+    "Tengo menos energía que la que solía tener": 1,
+    "No tengo suficiente energía para hacer demasiado": 2,
+    "No tengo suficiente energía para hacer nada": 3
+  },
+  "Cambio en los habitos de sueño": {
+    "No he experimentado ningún cambio en mis hábitos de sueño": 0,
+    "Duermo un poco más que lo habitual": 1,
+    "Duermo un poco menos que lo habitual": 1,
+    "Duermo mucho más que lo habitual": 2,
+    "Duermo mucho menos que lo habitual": 2,
+    "Duermo la mayor parte del día": 3,
+    "Me despierto 1-2 horas más temprano y no puedo volver a dormirme": 3
+  },
+  "Irritabilidad": {
+    "No estoy más irritable que lo habitual": 0,
+    "Estoy más irritable que lo habitual": 1,
+    "Estoy mucho más irritable que lo habitual": 2,
+    "Estoy irritable todo el tiempo": 3
+  },
+  "Cambios en el apetito": {
+    "No he experimentado ningún cambio en mi apetito": 0,
+    "Mi apetito es un poco menor que lo habitual": 1,
+    "Mi apetito es un poco mayor que lo habitual": 1,
+    "Mi apetito es mucho menor que antes": 2,
+    "Mi apetito es mucho mayor que antes": 2,
+    "No tengo apetito en absoluto": 3,
+    "Quiero comer todo el tiempo": 3
+  },
+  "Dificultad de concentración": {
+    "Puedo concentrarme tan bien como siempre": 0,
+    "No puedo concentrarme tan bien como habitualmente": 1,
+    "Me es difícil mantener la mente en algo por mucho tiempo": 2,
+    "Encuentro que no puedo concentrarme en nada": 3
+  },
+  "Cansacio o fatiga": {
+    "No estoy más cansado(a) o fatigado(a) que lo habitual": 0,
+    "Me fatigo o me canso más fácilmente que lo habitual": 1,
+    "Estoy demasiado fatigado(a) o cansado(a) para hacer muchas de las cosas que solía hacer": 2,
+    "Estoy demasiado cansado(a) o fatigado(a) para hacer la mayoría de las cosas que solía hacer": 3
+  },
+  "Pérdida de interés en el sexo": {
+    "No he notado ningún cambio reciente en mi interés por el sexo": 0,
+    "Estoy menos interesado(a) en el sexo de lo que solía estarlo": 1,
+    "Ahora estoy mucho menos interesado(a) en el sexo": 2,
+    "He perdido completamente el interés en el sexo": 3
   }
 }
