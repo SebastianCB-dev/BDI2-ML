@@ -1,32 +1,18 @@
 import json
 import pandas as pd
+from preprocessing_service import preprocesamiento
+from file_service import read_json, read_txt
 
-def getTypes(data): 
-  types = []
-  types.append("text")
-  for i in data.keys():
-      if not data[i]["tipo"] in types:
-        types.append(data[i]["tipo"])
-  return types
+# Leer información del archivo items.json y de comentariostest
+beck_data = json.loads(read_json('./items.json'))
+comments_array = list(read_txt('./comentarios_test.txt'))
 
-def getDict(types):
-  dictionary = {}
-  count = 1
-  dictionary["text"] = "....El suicidio es definitivo mientras que el problema que atraviesas es temporal” 🙏🏽"
-  for i in types:
-    if not i == "text":
-      dictionary[i] = count
-      count += 1
-  return dictionary
+# Arreglo de las 21 categorias del BDI-II
+types = list(beck_data.keys())
 
-data_file = open('./items.json', 'r', encoding='utf8')
-
-beck_data = json.loads(data_file.read())
-types = getTypes(beck_data)
-
-print("La cantidad de tipos son:", len(types))
-print("La cantidad de items son: ", len(beck_data))
-
-dictionary = getDict(types)
-df_comments = pd.DataFrame(data=dictionary, columns=types, index=[1])
-print(df_comments)
+# Preprocesamiento
+print(' Comentario antes '.center(50, '#'))
+print(comments_array[0])
+comment1_preprocessing = preprocesamiento(comments_array[0])
+print(' Comentario despúes '.center(50, '#'))
+print(comment1_preprocessing)

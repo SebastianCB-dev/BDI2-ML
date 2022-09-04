@@ -1,5 +1,5 @@
 from string import punctuation
-import emoji 
+import emoji
 import re
 from nltk.tokenize import word_tokenize
 import spacy
@@ -7,21 +7,22 @@ from nltk.corpus import stopwords
 sp = spacy.load('es_core_news_md')
 all_stopwords = sp.Defaults.stop_words
 
-
 def preprocesamiento(texto: str) -> list[str]:
   """
     Preprocesamiento
     Función que hace el llamado a otras funciones con el fin de limpiar el texto de entrada.
     :param texto: texto sin procesar
     :return: Texto procesado y limpiado
-    """    
-    
+    """
+
   # Eliminar etiquetas y hashtags
   texto = eliminar_etiquetados(texto)
   texto = eliminar_emojis(texto)
   texto = eliminacion_data_inutil(texto)
   texto = stop_words(texto)
+  # texto = lematizacion(texto) 
   return texto
+
 
 def eliminar_etiquetados(texto: str) -> str:
   """_summary_
@@ -42,7 +43,8 @@ def eliminar_etiquetados(texto: str) -> str:
 
 
 def eliminar_emojis(texto: str) -> str:
-  return emoji.replace_emoji(texto ,"")
+  return emoji.replace_emoji(texto, "")
+
 
 def eliminacion_data_inutil(texto: str) -> str:
   '''
@@ -69,7 +71,12 @@ def eliminacion_data_inutil(texto: str) -> str:
   nuevo_texto = [token for token in nuevo_texto if len(token) > 2]
   return " ".join(nuevo_texto)
 
+
 def stop_words(text: str) -> list[str]:
   text_tokens = word_tokenize(text)
-  tokens_without_sw = [word for word in text_tokens if not word in all_stopwords]
+  tokens_without_sw = [
+      word for word in text_tokens if not word in all_stopwords]
   return tokens_without_sw
+
+def lematizacion(text: list[str]) -> list[str]:
+  pass
