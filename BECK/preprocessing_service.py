@@ -3,12 +3,14 @@ import re
 from nltk.tokenize import word_tokenize
 import spacy
 import stanza
+import hunspell
 
 stanza.download('es', package='ancora',
                 processors='tokenize,mwt,pos,lemma', verbose=True)
 stNLP = stanza.Pipeline(
     processors='tokenize,mwt,pos,lemma', lang='es', use_gpu=True)
 # Variables globales
+dic = hunspell.HunSpell("./Diccionario/es_ANY.dic", "./Diccionario/es_ANY.aff")
 sp = spacy.load('es_core_news_md')
 all_stopwords = sp.Defaults.stop_words
 
@@ -23,9 +25,8 @@ def preprocesamiento(texto: str) -> list[str]:
   # Eliminar etiquetas y hashtags
   texto = eliminar_etiquetados(texto)
   texto = eliminar_emojis(texto)
-  texto = eliminacion_data_inutil(texto)
-  # TODO: Corrección ortografica
-  
+  texto = eliminacion_data_inutil(texto)  
+  texto = correccion(texto)
   texto = stop_words(texto)
   texto = lematizacion(texto) 
   return texto
@@ -91,3 +92,22 @@ def lematizacion(words: list[str]) -> list[str]:
     result = stNLP(word)
     new_words.append([word.lemma for sent in result.sentences for word in sent.words][0])
   return new_words
+
+
+def correccion(texto: str) -> str:
+
+  # Correccion Ortografica
+  arr = texto.split(" ")
+  result = ""
+  for palabra in arr:
+    res = dic.spell(palabra)
+    if not res:
+      try:
+        res = dic.suggest(palabra)[0]
+      except Exception:
+        res = palabra
+    else:
+      res = palabra
+    result += res + " "
+  result = result.strip()
+  return result
