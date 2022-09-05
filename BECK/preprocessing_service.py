@@ -93,9 +93,7 @@ def lematizacion(words: list[str]) -> list[str]:
     new_words.append([word.lemma for sent in result.sentences for word in sent.words][0])
   return new_words
 
-
 def correccion(texto: str) -> str:
-
   # Correccion Ortografica
   arr = texto.split(" ")
   result = ""
