@@ -1,9 +1,14 @@
-from string import punctuation
 import emoji
 import re
 from nltk.tokenize import word_tokenize
 import spacy
-from nltk.corpus import stopwords
+import stanza
+
+stanza.download('es', package='ancora',
+                processors='tokenize,mwt,pos,lemma', verbose=True)
+stNLP = stanza.Pipeline(
+    processors='tokenize,mwt,pos,lemma', lang='es', use_gpu=True)
+# Variables globales
 sp = spacy.load('es_core_news_md')
 all_stopwords = sp.Defaults.stop_words
 
@@ -19,8 +24,10 @@ def preprocesamiento(texto: str) -> list[str]:
   texto = eliminar_etiquetados(texto)
   texto = eliminar_emojis(texto)
   texto = eliminacion_data_inutil(texto)
+  # TODO: Corrección ortografica
+  
   texto = stop_words(texto)
-  # texto = lematizacion(texto) 
+  texto = lematizacion(texto) 
   return texto
 
 
@@ -78,5 +85,9 @@ def stop_words(text: str) -> list[str]:
       word for word in text_tokens if not word in all_stopwords]
   return tokens_without_sw
 
-def lematizacion(text: list[str]) -> list[str]:
-  pass
+def lematizacion(words: list[str]) -> list[str]:
+  new_words = []
+  for word in words:    
+    result = stNLP(word)
+    new_words.append([word.lemma for sent in result.sentences for word in sent.words][0])
+  return new_words

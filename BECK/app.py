@@ -12,7 +12,7 @@ types = list(beck_data.keys())
 
 # Preprocesamiento
 print(' Comentario antes '.center(50, '#'))
-print(comments_array[0])
-comment1_preprocessing = preprocesamiento(comments_array[0])
+print(comments_array[19])
+comment1_preprocessing = preprocesamiento(comments_array[19])
 print(' Comentario despúes '.center(50, '#'))
 print(comment1_preprocessing)
