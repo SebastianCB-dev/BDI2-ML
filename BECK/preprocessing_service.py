@@ -75,8 +75,6 @@ def eliminacion_data_inutil(texto: str) -> str:
   nuevo_texto = re.sub("\\s+", ' ', nuevo_texto)
   # Tokenización por palabras individuales
   nuevo_texto = nuevo_texto.split(sep=' ')
-  # Eliminación de tokens con una longitud < 2
-  nuevo_texto = [token for token in nuevo_texto if len(token) > 2]
   return " ".join(nuevo_texto)
 
 
