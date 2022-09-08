@@ -1,0 +1,745 @@
+{
+  "Tristeza": {
+    "1": {
+      "data": [
+        "sentir",
+        "triste"
+      ],
+      "value": 0
+    },
+    "2": {
+      "data": [
+        "sentir",
+        "triste",
+        "tiempo"
+      ],
+      "value": 1
+    },
+    "3": {
+      "data": [
+        "triste",
+        "tiempo"
+      ],
+      "value": 2
+    },
+    "4": {
+      "data": [
+        "triste",
+        "infeliz",
+        "soportar"
+      ],
+      "value": 3
+    }
+  },
+  "Pesimismo": {
+    "1": {
+      "data": [
+        "desalentado",
+        "futuro"
+      ],
+      "value": 0
+    },
+    "2": {
+      "data": [
+        "sentir",
+        "desalentado",
+        "futuro",
+        "soler",
+        "estar"
+      ],
+      "value": 1
+    },
+    "3": {
+      "data": [
+        "esperar",
+        "cosa",
+        "funcionar"
+      ],
+      "value": 2
+    },
+    "4": {
+      "data": [
+        "sentir",
+        "esperanza",
+        "futuro",
+        "empeorar"
+      ],
+      "value": 3
+    }
+  },
+  "Fracaso": {
+    "1": {
+      "data": [
+        "sentir",
+        "fracasar"
+      ],
+      "value": 0
+    },
+    "2": {
+      "data": [
+        "fracasar",
+        "haber"
+      ],
+      "value": 1
+    },
+    "3": {
+      "data": [
+        "mirar",
+        "atr\u00e1s",
+        "ver",
+        "fracaso"
+      ],
+      "value": 2
+    },
+    "4": {
+      "data": [
+        "sentir",
+        "persona",
+        "fracaso"
+      ],
+      "value": 3
+    }
+  },
+  "P\u00e9rdida de placer": {
+    "1": {
+      "data": [
+        "obtener",
+        "placer",
+        "cosa",
+        "disfrutar"
+      ],
+      "value": 0
+    },
+    "2": {
+      "data": [
+        "disfrutar",
+        "cosa",
+        "soler"
+      ],
+      "value": 1
+    },
+    "3": {
+      "data": [
+        "obtener",
+        "placer",
+        "cosa",
+        "soler",
+        "disfrutar"
+      ],
+      "value": 2
+    },
+    "4": {
+      "data": [
+        "obtener",
+        "placer",
+        "cosa",
+        "soler",
+        "disfrutar"
+      ],
+      "value": 3
+    }
+  },
+  "Sentimiento de culpa": {
+    "1": {
+      "data": [
+        "sentir",
+        "particularmente",
+        "culpable"
+      ],
+      "value": 0
+    },
+    "2": {
+      "data": [
+        "sentir",
+        "culpable",
+        "cosa",
+        "deber"
+      ],
+      "value": 1
+    },
+    "3": {
+      "data": [
+        "sentir",
+        "culpable",
+        "tiempo"
+      ],
+      "value": 2
+    },
+    "4": {
+      "data": [
+        "sentir",
+        "culpable",
+        "tiempo"
+      ],
+      "value": 3
+    }
+  },
+  "Sentimiento de castigo": {
+    "1": {
+      "data": [
+        "sentir",
+        "castigar"
+      ],
+      "value": 0
+    },
+    "2": {
+      "data": [
+        "sentir",
+        "castigar"
+      ],
+      "value": 1
+    },
+    "3": {
+      "data": [
+        "esperar",
+        "castigar"
+      ],
+      "value": 2
+    },
+    "4": {
+      "data": [
+        "sentir",
+        "castigar"
+      ],
+      "value": 3
+    }
+  },
+  "Disconformidad con uno mismo": {
+    "1": {
+      "data": [
+        "sentir",
+        "acerca"
+      ],
+      "value": 0
+    },
+    "2": {
+      "data": [
+        "perdido",
+        "confianza"
+      ],
+      "value": 1
+    },
+    "3": {
+      "data": [
+        "decepcionado"
+      ],
+      "value": 2
+    },
+    "4": {
+      "data": [
+        "gusto"
+      ],
+      "value": 3
+    }
+  },
+  "Autocr\u00edtica": {
+    "1": {
+      "data": [
+        "critico",
+        "culpar",
+        "habitual"
+      ],
+      "value": 0
+    },
+    "2": {
+      "data": [
+        "cr\u00edtico",
+        "soler",
+        "estar"
+      ],
+      "value": 1
+    },
+    "3": {
+      "data": [
+        "critico",
+        "error"
+      ],
+      "value": 2
+    },
+    "4": {
+      "data": [
+        "culpar",
+        "malo",
+        "suceder"
+      ],
+      "value": 3
+    }
+  },
+  "Pensamiento o deseos suicidas": {
+    "1": {
+      "data": [
+        "pensamiento",
+        "matar"
+      ],
+      "value": 0
+    },
+    "2": {
+      "data": [
+        "pensamiento",
+        "matar",
+        "hacer"
+      ],
+      "value": 1
+    },
+    "3": {
+      "data": [
+        "querer",
+        "matar"
+      ],
+      "value": 2
+    },
+    "4": {
+      "data": [
+        "matar",
+        "tener",
+        "oportunidad"
+      ],
+      "value": 3
+    }
+  },
+  "Llanto": {
+    "1": {
+      "data": [
+        "llorar",
+        "soler"
+      ],
+      "value": 0
+    },
+    "2": {
+      "data": [
+        "llorar",
+        "soler"
+      ],
+      "value": 1
+    },
+    "3": {
+      "data": [
+        "llorar",
+        "peque\u00f1ez"
+      ],
+      "value": 2
+    },
+    "4": {
+      "data": [
+        "sentir",
+        "gana",
+        "llorar"
+      ],
+      "value": 3
+    }
+  },
+  "Agitaci\u00f3n": {
+    "1": {
+      "data": [
+        "inquieto",
+        "tenso",
+        "habitual"
+      ],
+      "value": 0
+    },
+    "2": {
+      "data": [
+        "sentir",
+        "inquieto",
+        "tenso",
+        "habitual"
+      ],
+      "value": 1
+    },
+    "3": {
+      "data": [
+        "inquieto",
+        "agitado",
+        "dif\u00edcil",
+        "quedar",
+        "quieto"
+      ],
+      "value": 3
+    },
+    "4": {
+      "data": [
+        "inquieto",
+        "agitado",
+        "movimiento"
+      ],
+      "value": 4
+    }
+  },
+  "P\u00e9rdida de inter\u00e9s": {
+    "1": {
+      "data": [
+        "perdido",
+        "inter\u00e9s",
+        "actividad",
+        "persona"
+      ],
+      "value": 0
+    },
+    "2": {
+      "data": [
+        "interesado",
+        "persona",
+        "cosa"
+      ],
+      "value": 1
+    },
+    "3": {
+      "data": [
+        "perdido",
+        "inter\u00e9s",
+        "persona",
+        "cosa"
+      ],
+      "value": 2
+    },
+    "4": {
+      "data": [
+        "dif\u00edcil",
+        "interesar"
+      ],
+      "value": 3
+    }
+  },
+  "Indecisi\u00f3n": {
+    "1": {
+      "data": [
+        "tomo",
+        "decisi\u00f3n"
+      ],
+      "value": 0
+    },
+    "2": {
+      "data": [
+        "resultar",
+        "dif\u00edcil",
+        "costumbre",
+        "tomar",
+        "decisi\u00f3n"
+      ],
+      "value": 1
+    },
+    "3": {
+      "data": [
+        "encontrar",
+        "dificultad",
+        "tomar",
+        "decisi\u00f3n"
+      ],
+      "value": 2
+    },
+    "4": {
+      "data": [
+        "problema",
+        "tomar",
+        "decisi\u00f3n"
+      ],
+      "value": 3
+    }
+  },
+  "Desvalorizaci\u00f3n": {
+    "1": {
+      "data": [
+        "sentir",
+        "valioso"
+      ],
+      "value": 0
+    },
+    "2": {
+      "data": [
+        "considerar",
+        "valioso",
+        "\u00fatil",
+        "soler"
+      ],
+      "value": 1
+    },
+    "3": {
+      "data": [
+        "sentir",
+        "valioso",
+        "comparar"
+      ],
+      "value": 2
+    },
+    "4": {
+      "data": [
+        "sentir",
+        "valer"
+      ],
+      "value": 3
+    }
+  },
+  "P\u00e9rdida de energ\u00eda": {
+    "1": {
+      "data": [
+        "tanto",
+        "energ\u00eda"
+      ],
+      "value": 0
+    },
+    "2": {
+      "data": [
+        "energ\u00eda",
+        "soler"
+      ],
+      "value": 1
+    },
+    "3": {
+      "data": [
+        "suficiente",
+        "energ\u00eda"
+      ],
+      "value": 2
+    },
+    "4": {
+      "data": [
+        "suficiente",
+        "energ\u00eda"
+      ],
+      "value": 3
+    }
+  },
+  "Cambio en los habitos de sue\u00f1o": {
+    "1": {
+      "data": [
+        "experimentado",
+        "cambio",
+        "h\u00e1bito",
+        "sue\u00f1o"
+      ],
+      "value": 0
+    },
+    "2": {
+      "data": [
+        "dorir",
+        "habitual"
+      ],
+      "value": 1
+    },
+    "3": {
+      "data": [
+        "dorir",
+        "habitual"
+      ],
+      "value": 1
+    },
+    "4": {
+      "data": [
+        "dorir",
+        "habitual"
+      ],
+      "value": 2
+    },
+    "5": {
+      "data": [
+        "dorir",
+        "habitual"
+      ],
+      "value": 2
+    },
+    "6": {
+      "data": [
+        "dorir"
+      ],
+      "value": 3
+    },
+    "7": {
+      "data": [
+        "despierto",
+        "hora",
+        "volver",
+        "dormir"
+      ],
+      "value": 3
+    }
+  },
+  "Irritabilidad": {
+    "1": {
+      "data": [
+        "irritable",
+        "habitual"
+      ],
+      "value": 0
+    },
+    "2": {
+      "data": [
+        "irritable",
+        "habitual"
+      ],
+      "value": 1
+    },
+    "3": {
+      "data": [
+        "irritable",
+        "habitual"
+      ],
+      "value": 2
+    },
+    "4": {
+      "data": [
+        "irritable",
+        "tiempo"
+      ],
+      "value": 3
+    }
+  },
+  "Cambios en el apetito": {
+    "1": {
+      "data": [
+        "experimentado",
+        "cambio",
+        "apetito"
+      ],
+      "value": 0
+    },
+    "2": {
+      "data": [
+        "apetito",
+        "menor",
+        "habitual"
+      ],
+      "value": 1
+    },
+    "3": {
+      "data": [
+        "apetito",
+        "habitual"
+      ],
+      "value": 1
+    },
+    "4": {
+      "data": [
+        "apetito",
+        "menor"
+      ],
+      "value": 2
+    },
+    "5": {
+      "data": [
+        "apetito"
+      ],
+      "value": 2
+    },
+    "6": {
+      "data": [
+        "apetito",
+        "absoluto"
+      ],
+      "value": 3
+    },
+    "7": {
+      "data": [
+        "querer",
+        "comer",
+        "tiempo"
+      ],
+      "value": 3
+    }
+  },
+  "Dificultad de concentraci\u00f3n": {
+    "1": {
+      "data": [
+        "concentrar"
+      ],
+      "value": 0
+    },
+    "2": {
+      "data": [
+        "concentrar",
+        "habitualmente"
+      ],
+      "value": 1
+    },
+    "3": {
+      "data": [
+        "dif\u00edcil",
+        "mantener",
+        "mente",
+        "tiempo"
+      ],
+      "value": 2
+    },
+    "4": {
+      "data": [
+        "encontrar",
+        "concentrar"
+      ],
+      "value": 3
+    }
+  },
+  "Cansacio o fatiga": {
+    "1": {
+      "data": [
+        "cansado",
+        "fatigado",
+        "habitual"
+      ],
+      "value": 0
+    },
+    "2": {
+      "data": [
+        "fatigo",
+        "cansar",
+        "f\u00e1cilmente",
+        "habitual"
+      ],
+      "value": 1
+    },
+    "3": {
+      "data": [
+        "fatigado",
+        "cansado",
+        "cosa",
+        "soler"
+      ],
+      "value": 2
+    },
+    "4": {
+      "data": [
+        "cansado",
+        "fatigado",
+        "mayor\u00eda",
+        "cosa",
+        "soler"
+      ],
+      "value": 3
+    }
+  },
+  "P\u00e9rdida de inter\u00e9s en el sexo": {
+    "1": {
+      "data": [
+        "notar",
+        "cambio",
+        "reciente",
+        "inter\u00e9s",
+        "sexo"
+      ],
+      "value": 0
+    },
+    "2": {
+      "data": [
+        "interesado",
+        "sexo",
+        "soler",
+        "estar"
+      ],
+      "value": 1
+    },
+    "3": {
+      "data": [
+        "interesado",
+        "sexo"
+      ],
+      "value": 2
+    },
+    "4": {
+      "data": [
+        "perdido",
+        "completamente",
+        "inter\u00e9s",
+        "sexo"
+      ],
+      "value": 3
+    }
+  }
+}

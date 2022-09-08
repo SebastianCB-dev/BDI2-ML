@@ -107,3 +107,18 @@ def correccion(texto: str) -> str:
     result += res + " "
   result = result.strip()
   return result
+
+def preprocesamiento_items_beck(items: dict, types: list[str]) -> dict:
+  beck_data_preprocessing = {}
+  for tipo in types:
+    results = list(items[tipo].keys())
+    results_id = list(items[tipo].values())
+    i = 0
+    item_id = 1
+    beck = {}
+    for result in results:
+      beck[item_id] = { "data": preprocesamiento(result), "value": results_id[i] }
+      i += 1
+      item_id += 1
+    beck_data_preprocessing[tipo] = beck
+  return beck_data_preprocessing
