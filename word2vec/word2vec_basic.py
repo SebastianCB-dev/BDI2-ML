@@ -32,8 +32,10 @@ from six.moves import urllib
 from six.moves import xrange  # pylint: disable=redefined-builtin
 import tensorflow as tf
 
-from tensorflow.contrib.tensorboard.plugins import projector
+from tensorboard.plugins import projector
+import tensorflow.compat.v1 as tf
 
+tf.disable_v2_behavior()
 # Give a folder path as an argument with '--log_dir' to save
 # TensorBoard summaries. Default is a log folder in current directory.
 current_path = os.path.dirname(os.path.realpath(sys.argv[0]))
