@@ -1,4 +1,0 @@
-embeddings {
-  tensor_name: "embeddings/Variable:0"
-  metadata_path: "C:\\Users\\SebastianCB-dev\\Documents\\TG\\preprocesamiento_de_datos\\word2vec\\log\\metadata.tsv"
-}
