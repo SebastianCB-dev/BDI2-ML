@@ -6,7 +6,6 @@
 import nltk
 import gensim
 
-
 # cargar el documento
 with open ('data/reglamento_transito.txt',
            'r',encoding='utf-8') as file:
