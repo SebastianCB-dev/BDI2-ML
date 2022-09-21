@@ -32,6 +32,23 @@ def preprocesamiento(texto: str) -> list[str]:
   return texto
 
 
+def preprocesamiento_no_ortografia(texto: str) -> list[str]:
+  """
+    Preprocesamiento
+    Función que hace el llamado a otras funciones con el fin de limpiar el texto de entrada.
+    :param texto: texto sin procesar
+    :return: Texto procesado y limpiado
+    """
+
+  # Eliminar etiquetas y hashtags
+  texto = eliminar_etiquetados(texto)
+  texto = eliminar_emojis(texto)
+  texto = eliminacion_data_inutil(texto)
+  texto = stop_words(texto)
+  texto = lematizacion(texto)
+  return texto
+
+
 def eliminar_etiquetados(texto: str) -> str:
   """_summary_
 

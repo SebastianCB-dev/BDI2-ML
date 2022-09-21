@@ -1,8 +1,7 @@
 import json
 import pandas as pd
-from preprocessing_service import preprocesamiento, preprocesamiento_items_beck
+from preprocessing_service import preprocesamiento_no_ortografia
 from file_service import read_json, read_txt
-import pprint
 # Leer información del archivo items.json y de comentariostest
 beck_data = json.loads(read_json('./JSON/items.json'))
 comments_array = list(read_txt('./comentarios_test.txt'))
@@ -15,12 +14,16 @@ try:
   if open('./JSON/items_preprocessing.json', 'r'):
     beck_data_preprocessing = json.loads(read_json('./JSON/items_preprocessing.json'))
 except Exception as e:
-  beck_data_preprocessing = preprocesamiento_items_beck(beck_data, types)
-  f = open("./JSON/items_preprocessing.json", "a")
-  f.write(str(json.dumps(beck_data_preprocessing, indent=2)))
-  f.close()
+  print(f'Error: {e}')  
 
-pprint.pprint(beck_data_preprocessing)    
-    
-    
-    
+# pprint.pprint(beck_data_preprocessing)    
+
+# !Vector Space Embedding
+
+df_entrenamiento = pd.read_csv('./datasets/dataset_entrenamiento.csv')
+comments_array = list(df_entrenamiento['text'])
+print(comments_array[0])
+comments_array_preprocessing = []
+for comment in comments_array:
+  comments_array_preprocessing.append(preprocesamiento_no_ortografia(comment))
+print(comments_array_preprocessing[0])
