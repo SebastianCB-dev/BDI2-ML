@@ -27,15 +27,15 @@ df_entrenamiento = pd.read_csv('./datasets/dataset_entrenamiento.csv')
 comments_array = list(df_entrenamiento['text'])
 i = 1
 comments_array_preprocessing = []
-print(comments_array[6209])
+
 for comment in comments_array:
   print(f'Preprocessing comment: {i}/7096')
-  comment = ''
+  comment_try = ''
   try:
-    comment = preprocesamiento_no_ortografia(comment)
-    comments_array_preprocessing.append(comment)
+    comment_try = preprocesamiento_no_ortografia(comment)
+    comments_array_preprocessing.append(comment_try)
   except Exception as e:
-    pass
+    print(f'Error processing comment: {i}/7096')
   i += 1
 
 dictionary = word_space(comments_array_preprocessing)
