@@ -5,6 +5,7 @@ from embeddings import word_space
 from preprocessing_service import preprocesamiento_no_ortografia
 from file_service import read_json, read_txt
 import gensim as gensim
+from pprint import pprint
 # Leer información del archivo items.json y de comentariostest
 beck_data = json.loads(read_json('./JSON/items.json'))
 comments_array = list(read_txt('./comentarios_test.txt'))
@@ -19,27 +20,11 @@ try:
 except Exception as e:
   print(f'Error: {e}')  
 
-# pprint.pprint(beck_data_preprocessing)    
+pprint(beck_data_preprocessing)    
 
 # !Vector Space Embedding
 
-df_entrenamiento = pd.read_csv('./datasets/dataset_entrenamiento.csv')
-comments_array = list(df_entrenamiento['text'])
-i = 1
-comments_array_preprocessing = []
-
-for comment in comments_array:
-  print(f'Preprocessing comment: {i}/7096')
-  comment_try = ''
-  try:
-    comment_try = preprocesamiento_no_ortografia(comment)
-    comments_array_preprocessing.append(comment_try)
-  except Exception as e:
-    print(f'Error processing comment: {i}/7096')
-  i += 1
-
-dictionary = word_space(comments_array_preprocessing)
-gensim.corpora.dictionary.Dictionary.save(dictionary, './myModel.sav')
+dictionary = gensim.corpora.dictionary.Dictionary.load('./myModel.sav')
 comment = 'a'
 while (comment != '0'):
   comment = input('Ingrese el texto: ')
