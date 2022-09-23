@@ -28,5 +28,11 @@ dictionary = gensim.corpora.dictionary.Dictionary.load('./myModel.sav')
 comment = 'a'
 while (comment != '0'):
   comment = input('Ingrese el texto: ')
-  result = dictionary.doc2bow(preprocesamiento(comment))
+  comment_preprocessing_input = preprocesamiento(comment)
+  result = dictionary.doc2bow(comment_preprocessing_input)
+  if(len(result) == 0):
+    # Entrenar la red neuronal con el nuevo texto
+    pass
+  
+  print('Array:', comment_preprocessing_input)
   print('El vector es:', result)
