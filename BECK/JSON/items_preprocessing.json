@@ -2,6 +2,7 @@
   "Tristeza": {
     "1": {
       "data": [
+        "no",
         "sentir",
         "triste"
       ],
@@ -11,21 +12,28 @@
       "data": [
         "sentir",
         "triste",
+        "mucho",
         "tiempo"
       ],
       "value": 1
     },
     "3": {
       "data": [
+        "estar",
         "triste",
+        "todo",
         "tiempo"
       ],
       "value": 2
     },
     "4": {
       "data": [
+        "estar",
+        "tan",
         "triste",
         "infeliz",
+        "no",
+        "poder",
         "soportar"
       ],
       "value": 3
@@ -34,15 +42,22 @@
   "Pesimismo": {
     "1": {
       "data": [
+        "no",
+        "estar",
         "desalentado",
-        "futuro"
+        "respecto",
+        "futuro",
+        "soler",
+        "estar"
       ],
       "value": 0
     },
     "2": {
       "data": [
         "sentir",
+        "mas",
         "desalentado",
+        "respecto",
         "futuro",
         "soler",
         "estar"
@@ -51,17 +66,22 @@
     },
     "3": {
       "data": [
+        "no",
         "esperar",
         "cosa",
-        "funcionar"
+        "funcionar",
+        "mi"
       ],
       "value": 2
     },
     "4": {
       "data": [
         "sentir",
+        "no",
         "esperanza",
         "futuro",
+        "solo",
+        "poder",
         "empeorar"
       ],
       "value": 3
@@ -70,6 +90,7 @@
   "Fracaso": {
     "1": {
       "data": [
+        "no",
         "sentir",
         "fracasar"
       ],
@@ -78,7 +99,8 @@
     "2": {
       "data": [
         "fracasar",
-        "haber"
+        "haber",
+        "deber"
       ],
       "value": 1
     },
@@ -94,7 +116,9 @@
     "4": {
       "data": [
         "sentir",
+        "yo",
         "persona",
+        "ser",
         "fracaso"
       ],
       "value": 3
@@ -105,6 +129,7 @@
       "data": [
         "obtener",
         "placer",
+        "siempre",
         "cosa",
         "disfrutar"
       ],
@@ -112,15 +137,18 @@
     },
     "2": {
       "data": [
+        "no",
         "disfrutar",
         "cosa",
-        "soler"
+        "soler",
+        "hacer"
       ],
       "value": 1
     },
     "3": {
       "data": [
         "obtener",
+        "poco",
         "placer",
         "cosa",
         "soler",
@@ -130,6 +158,8 @@
     },
     "4": {
       "data": [
+        "no",
+        "poder",
         "obtener",
         "placer",
         "cosa",
@@ -142,6 +172,7 @@
   "Sentimiento de culpa": {
     "1": {
       "data": [
+        "no",
         "sentir",
         "particularmente",
         "culpable"
@@ -153,7 +184,9 @@
         "sentir",
         "culpable",
         "cosa",
-        "deber"
+        "hacer",
+        "deber",
+        "haber"
       ],
       "value": 1
     },
@@ -161,6 +194,7 @@
       "data": [
         "sentir",
         "culpable",
+        "mayor",
         "tiempo"
       ],
       "value": 2
@@ -169,6 +203,7 @@
       "data": [
         "sentir",
         "culpable",
+        "todo",
         "tiempo"
       ],
       "value": 3
@@ -177,14 +212,19 @@
   "Sentimiento de castigo": {
     "1": {
       "data": [
+        "no",
         "sentir",
-        "castigar"
+        "estar",
+        "ser",
+        "castigado"
       ],
       "value": 0
     },
     "2": {
       "data": [
         "sentir",
+        "tal vez",
+        "ser",
         "castigar"
       ],
       "value": 1
@@ -192,14 +232,17 @@
     "3": {
       "data": [
         "esperar",
-        "castigar"
+        "ser",
+        "castigado"
       ],
       "value": 2
     },
     "4": {
       "data": [
         "sentir",
-        "castigar"
+        "estar",
+        "ser",
+        "castigado"
       ],
       "value": 3
     }
@@ -208,26 +251,33 @@
     "1": {
       "data": [
         "sentir",
-        "acerca"
+        "acerca",
+        "yo",
+        "siempre"
       ],
       "value": 0
     },
     "2": {
       "data": [
-        "perdido",
-        "confianza"
+        "perder",
+        "confianza",
+        "yo"
       ],
       "value": 1
     },
     "3": {
       "data": [
-        "decepcionado"
+        "estar",
+        "decepcionado",
+        "yo"
       ],
       "value": 2
     },
     "4": {
       "data": [
-        "gusto"
+        "no",
+        "gustar",
+        "yo"
       ],
       "value": 3
     }
@@ -235,7 +285,8 @@
   "Autocr\u00edtica": {
     "1": {
       "data": [
-        "critico",
+        "no",
+        "criticar",
         "culpar",
         "habitual"
       ],
@@ -244,6 +295,7 @@
     "2": {
       "data": [
         "cr\u00edtico",
+        "yo",
         "soler",
         "estar"
       ],
@@ -251,7 +303,8 @@
     },
     "3": {
       "data": [
-        "critico",
+        "criticar",
+        "yo",
         "error"
       ],
       "value": 2
@@ -259,6 +312,7 @@
     "4": {
       "data": [
         "culpar",
+        "yo",
         "malo",
         "suceder"
       ],
@@ -268,6 +322,7 @@
   "Pensamiento o deseos suicidas": {
     "1": {
       "data": [
+        "no",
         "pensamiento",
         "matar"
       ],
@@ -275,8 +330,10 @@
     },
     "2": {
       "data": [
+        "tener",
         "pensamiento",
         "matar",
+        "no",
         "hacer"
       ],
       "value": 1
@@ -292,7 +349,8 @@
       "data": [
         "matar",
         "tener",
-        "oportunidad"
+        "oportunidad",
+        "hacer"
       ],
       "value": 3
     }
@@ -300,6 +358,7 @@
   "Llanto": {
     "1": {
       "data": [
+        "no",
         "llorar",
         "soler"
       ],
@@ -308,7 +367,9 @@
     "2": {
       "data": [
         "llorar",
-        "soler"
+        "mas",
+        "soler",
+        "hacer"
       ],
       "value": 1
     },
@@ -323,7 +384,9 @@
       "data": [
         "sentir",
         "gana",
-        "llorar"
+        "llorar",
+        "no",
+        "poder"
       ],
       "value": 3
     }
@@ -331,6 +394,8 @@
   "Agitaci\u00f3n": {
     "1": {
       "data": [
+        "no",
+        "estar",
         "inquieto",
         "tenso",
         "habitual"
@@ -348,6 +413,7 @@
     },
     "3": {
       "data": [
+        "estar",
         "inquieto",
         "agitado",
         "dif\u00edcil",
@@ -358,9 +424,12 @@
     },
     "4": {
       "data": [
+        "estar",
         "inquieto",
         "agitado",
-        "movimiento"
+        "movimiento",
+        "hacer",
+        "algo"
       ],
       "value": 4
     }
@@ -368,7 +437,8 @@
   "P\u00e9rdida de inter\u00e9s": {
     "1": {
       "data": [
-        "perdido",
+        "no",
+        "perder",
         "inter\u00e9s",
         "actividad",
         "persona"
@@ -377,6 +447,8 @@
     },
     "2": {
       "data": [
+        "estar",
+        "menos",
         "interesado",
         "persona",
         "cosa"
@@ -385,7 +457,7 @@
     },
     "3": {
       "data": [
-        "perdido",
+        "perder",
         "inter\u00e9s",
         "persona",
         "cosa"
@@ -395,7 +467,8 @@
     "4": {
       "data": [
         "dif\u00edcil",
-        "interesar"
+        "interesar",
+        "algo"
       ],
       "value": 3
     }
@@ -403,8 +476,9 @@
   "Indecisi\u00f3n": {
     "1": {
       "data": [
-        "tomo",
-        "decisi\u00f3n"
+        "tomar",
+        "decisi\u00f3n",
+        "siempre"
       ],
       "value": 0
     },
@@ -429,6 +503,7 @@
     },
     "4": {
       "data": [
+        "tener",
         "problema",
         "tomar",
         "decisi\u00f3n"
@@ -439,6 +514,7 @@
   "Desvalorizaci\u00f3n": {
     "1": {
       "data": [
+        "no",
         "sentir",
         "valioso"
       ],
@@ -446,6 +522,7 @@
     },
     "2": {
       "data": [
+        "no",
         "considerar",
         "valioso",
         "\u00fatil",
@@ -456,14 +533,17 @@
     "3": {
       "data": [
         "sentir",
+        "menos",
         "valioso",
-        "comparar"
+        "comparar",
+        "otro"
       ],
       "value": 2
     },
     "4": {
       "data": [
         "sentir",
+        "no",
         "valer"
       ],
       "value": 3
@@ -472,13 +552,16 @@
   "P\u00e9rdida de energ\u00eda": {
     "1": {
       "data": [
-        "tanto",
+        "tener",
+        "tanta",
         "energ\u00eda"
       ],
       "value": 0
     },
     "2": {
       "data": [
+        "tener",
+        "menos",
         "energ\u00eda",
         "soler"
       ],
@@ -486,15 +569,23 @@
     },
     "3": {
       "data": [
+        "no",
+        "tener",
         "suficiente",
-        "energ\u00eda"
+        "energ\u00eda",
+        "hacer",
+        "demasiado"
       ],
       "value": 2
     },
     "4": {
       "data": [
+        "no",
+        "tener",
         "suficiente",
-        "energ\u00eda"
+        "energ\u00eda",
+        "hacer",
+        "nada"
       ],
       "value": 3
     }
@@ -502,7 +593,8 @@
   "Cambio en los habitos de sue\u00f1o": {
     "1": {
       "data": [
-        "experimentado",
+        "no",
+        "experimentar",
         "cambio",
         "h\u00e1bito",
         "sue\u00f1o"
@@ -511,42 +603,53 @@
     },
     "2": {
       "data": [
-        "dorir",
+        "dormir",
+        "mas",
         "habitual"
       ],
       "value": 1
     },
     "3": {
       "data": [
-        "dorir",
+        "dormir",
+        "menos",
         "habitual"
       ],
       "value": 1
     },
     "4": {
       "data": [
-        "dorir",
+        "dormir",
+        "mucho",
+        "mas",
         "habitual"
       ],
       "value": 2
     },
     "5": {
       "data": [
-        "dorir",
+        "dormir",
+        "mucho",
+        "menos",
         "habitual"
       ],
       "value": 2
     },
     "6": {
       "data": [
-        "dorir"
+        "dormir",
+        "mayor",
+        "dia"
       ],
       "value": 3
     },
     "7": {
       "data": [
-        "despierto",
-        "hora",
+        "despertar",
+        "mas",
+        "temprano",
+        "no",
+        "poder",
         "volver",
         "dormir"
       ],
@@ -556,6 +659,8 @@
   "Irritabilidad": {
     "1": {
       "data": [
+        "no",
+        "estar",
         "irritable",
         "habitual"
       ],
@@ -563,13 +668,18 @@
     },
     "2": {
       "data": [
+        "estar",
         "irritable",
+        "mas",
         "habitual"
       ],
       "value": 1
     },
     "3": {
       "data": [
+        "estar",
+        "mucho",
+        "mas",
         "irritable",
         "habitual"
       ],
@@ -577,7 +687,9 @@
     },
     "4": {
       "data": [
+        "estar",
         "irritable",
+        "todo",
         "tiempo"
       ],
       "value": 3
@@ -586,7 +698,8 @@
   "Cambios en el apetito": {
     "1": {
       "data": [
-        "experimentado",
+        "no",
+        "experimentar",
         "cambio",
         "apetito"
       ],
@@ -595,6 +708,7 @@
     "2": {
       "data": [
         "apetito",
+        "poco",
         "menor",
         "habitual"
       ],
@@ -603,6 +717,8 @@
     "3": {
       "data": [
         "apetito",
+        "poco",
+        "mayor",
         "habitual"
       ],
       "value": 1
@@ -610,18 +726,25 @@
     "4": {
       "data": [
         "apetito",
-        "menor"
+        "mucho",
+        "menor",
+        "antes"
       ],
       "value": 2
     },
     "5": {
       "data": [
-        "apetito"
+        "apetito",
+        "mucho",
+        "mayor",
+        "antes"
       ],
       "value": 2
     },
     "6": {
       "data": [
+        "no",
+        "tener",
         "apetito",
         "absoluto"
       ],
@@ -639,12 +762,16 @@
   "Dificultad de concentraci\u00f3n": {
     "1": {
       "data": [
-        "concentrar"
+        "poder",
+        "concentrar",
+        "siempre"
       ],
       "value": 0
     },
     "2": {
       "data": [
+        "no",
+        "poder",
         "concentrar",
         "habitualmente"
       ],
@@ -655,6 +782,7 @@
         "dif\u00edcil",
         "mantener",
         "mente",
+        "mucho",
         "tiempo"
       ],
       "value": 2
@@ -662,7 +790,10 @@
     "4": {
       "data": [
         "encontrar",
-        "concentrar"
+        "no",
+        "poder",
+        "concentrar",
+        "nada"
       ],
       "value": 3
     }
@@ -670,6 +801,8 @@
   "Cansacio o fatiga": {
     "1": {
       "data": [
+        "no",
+        "estar",
         "cansado",
         "fatigado",
         "habitual"
@@ -687,8 +820,12 @@
     },
     "3": {
       "data": [
+        "estar",
+        "demasiado",
         "fatigado",
         "cansado",
+        "hacer",
+        "mayoria",
         "cosa",
         "soler"
       ],
@@ -696,8 +833,11 @@
     },
     "4": {
       "data": [
+        "estar",
+        "demasiado",
         "cansado",
         "fatigado",
+        "hacer",
         "mayor\u00eda",
         "cosa",
         "soler"
@@ -708,9 +848,9 @@
   "P\u00e9rdida de inter\u00e9s en el sexo": {
     "1": {
       "data": [
+        "no",
         "notar",
         "cambio",
-        "reciente",
         "inter\u00e9s",
         "sexo"
       ],
@@ -718,15 +858,19 @@
     },
     "2": {
       "data": [
+        "estar",
+        "menos",
         "interesado",
         "sexo",
-        "soler",
-        "estar"
+        "soler"
       ],
       "value": 1
     },
     "3": {
       "data": [
+        "estar",
+        "mucho",
+        "menos",
         "interesado",
         "sexo"
       ],
@@ -734,7 +878,7 @@
     },
     "4": {
       "data": [
-        "perdido",
+        "perder",
         "completamente",
         "inter\u00e9s",
         "sexo"
