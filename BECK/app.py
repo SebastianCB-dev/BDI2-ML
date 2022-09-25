@@ -23,3 +23,5 @@ except Exception as e:
 # pprint(beck_data_preprocessing)
 #!Vector Space Embedding
 model = Word2Vec.load('word2vec.model')
+
+print(model.wv.distance("morir", "feliz"))
