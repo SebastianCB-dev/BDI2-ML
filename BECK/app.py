@@ -2,9 +2,9 @@ import json
 import pandas as pd
 from gensim.models import Word2Vec
 from pprint import pprint
+from preprocessing_service import Preprocesamiento
 # Leer información del archivo items.json y de comentariostest
 comments_array = list(open('./comentarios_test.txt', 'r', encoding='utf-8').readlines())
-
 
 beck_data_preprocessing = {}
 try:
@@ -17,38 +17,18 @@ except Exception as e:
 #!Vector Space Embedding
 model = Word2Vec.load('word2vec.model')
 
+preprocesamiento = Preprocesamiento()
 
-data_beck = []
+comment_test = preprocesamiento(comments_array[0])
 
-items = beck_data_preprocessing.keys()
-for item in items:
-  keys = beck_data_preprocessing[item].keys()
-  for key in keys:
-    data_beck.append(beck_data_preprocessing[item][key]["data"])
+array_item = []
+for key in beck_data_preprocessing["Pensamiento o deseos suicidas"].keys():
+  array_item.append(beck_data_preprocessing["Pensamiento o deseos suicidas"][key]["data"])
 
-model.build_vocab(data_beck)
-model.save('word2vec.model')
+print(comment_test)
+i = 0
+# for item in array_item:
+#   coseno = model.wv.distances(comment_test, item)
+#   print(f'Item BECK {i} distancia coseno: ${coseno}')
 
-
-
-
-
-
-
-
-
-
-
-# comment_test = preprocesamiento(comments_array[0])
-
-# array_item = []
-# for key in beck_data_preprocessing["Pensamiento o deseos suicidas"].keys():
-#   array_item.append(beck_data_preprocessing["Pensamiento o deseos suicidas"][key]["data"])
-
-# print(comment_test)
-# i = 0
-# # for item in array_item:
-# #   coseno = model.wv.distances(comment_test, item)
-# #   print(f'Item BECK {i} distancia coseno: ${coseno}')
-
-# model.wv.distances()
+model.wv.distances()

@@ -25,7 +25,38 @@ class Preprocesamiento:
     self.sp = spacy.load('es_core_news_md')
     self.all_stopwords = self.sp.Defaults.stop_words
 
+  def preprocesamiento_con_ortografia(self, texto: str) -> list[str]:
+    """
+    Preprocesamiento
+    Función que hace el llamado a otras funciones con el fin de limpiar el texto de entrada.
+    :param texto: texto sin procesar
+    :return: Texto procesado y limpiado
+    """
+    # Eliminar etiquetas y hashtags
+    texto = self.eliminar_etiquetados(texto)
+    texto = self.eliminar_emojis(texto)
+    texto = self.eliminacion_data_inutil(texto)
+    texto = self.correccion_ortografica(texto)
+    texto = self.stop_words(texto)
+    texto = self.lematizacion(texto)
+    return texto
 
+
+  def preprocesamiento_sin_ortografia(self, texto: str) -> list[str]:
+    """
+    Preprocesamiento
+    Función que hace el llamado a otras funciones con el fin de limpiar el texto de entrada.
+    :param texto: texto sin procesar
+    :return: Texto procesado y limpiado
+    """
+    # Eliminar etiquetas y hashtags
+    texto = self.eliminar_etiquetados(texto)
+    texto = self.eliminar_emojis(texto)
+    texto = self.eliminacion_data_inutil(texto)
+    texto = self.stop_words(texto)
+    texto = self.lematizacion(texto)
+    return texto
+  
   def eliminar_etiquetados(self, texto: str) -> str:
     """_summary_
 
