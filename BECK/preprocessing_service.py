@@ -15,7 +15,7 @@ class Preprocesamiento:
     # lematizacion(texto)
 
   def __init__(self):
-    self.stanza.download('es', package='ancora',
+    stanza.download('es', package='ancora',
                              processors='tokenize,mwt,pos,lemma', verbose=True)
     self.stNLP = stanza.Pipeline(
       processors='tokenize,mwt,pos,lemma', lang='es', use_gpu=True)

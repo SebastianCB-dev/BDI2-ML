@@ -19,7 +19,7 @@ model = Word2Vec.load('word2vec.model')
 
 preprocesamiento = Preprocesamiento()
 
-comment_test = preprocesamiento(comments_array[0])
+comment_test = preprocesamiento.preprocesamiento_con_ortografia(comments_array[0])
 
 array_item = []
 for key in beck_data_preprocessing["Pensamiento o deseos suicidas"].keys():
@@ -27,8 +27,7 @@ for key in beck_data_preprocessing["Pensamiento o deseos suicidas"].keys():
 
 print(comment_test)
 i = 0
-# for item in array_item:
-#   coseno = model.wv.distances(comment_test, item)
-#   print(f'Item BECK {i} distancia coseno: ${coseno}')
-
-model.wv.distances()
+for item in array_item:
+  coseno = model.wv.wmdistance(comment_test, item)
+  print(f'Item BECK {i} distancia coseno: ${coseno}')
+  i += 1
