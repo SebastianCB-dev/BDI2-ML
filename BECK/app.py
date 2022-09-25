@@ -22,15 +22,4 @@ except Exception as e:
 
 # pprint(beck_data_preprocessing)
 #!Vector Space Embedding
-
-arreglo_beck = []
-
-for item_beck in beck_data_preprocessing.keys():
-  item = beck_data_preprocessing[item_beck].keys()
-  for text in item:
-    arreglo_beck.append(beck_data_preprocessing[item_beck][text]['data'])
-
 model = Word2Vec.load('word2vec.model')
-model.train(arreglo_beck, total_examples=model.corpus_count, epochs=model.epochs)
-model.save("word2vec.model")
-print(model.wv["revelar"])
