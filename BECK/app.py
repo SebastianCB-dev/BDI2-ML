@@ -25,6 +25,7 @@ array_item = []
 for key in beck_data_preprocessing["Pensamiento o deseos suicidas"].keys():
   array_item.append(beck_data_preprocessing["Pensamiento o deseos suicidas"][key]["data"])
 
+print(f"Vector de 'suicidar' {model.wv['llorar']}")
 print(comment_test)
 i = 0
 for item in array_item:
