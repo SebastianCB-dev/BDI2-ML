@@ -24,4 +24,16 @@ except Exception as e:
 #!Vector Space Embedding
 model = Word2Vec.load('word2vec.model')
 
-print(model.wv.distance("morir", "feliz"))
+comment_test = preprocesamiento(comments_array[0])
+
+array_item = []
+for key in beck_data_preprocessing["Pensamiento o deseos suicidas"].keys():
+  array_item.append(beck_data_preprocessing["Pensamiento o deseos suicidas"][key]["data"])
+
+print(comment_test)
+i = 0
+for item in array_item:
+  coseno = model.wv.distances(comment_test, item)
+  print(f'Item BECK {i} distancia coseno: ${coseno}')
+
+# model.wv.distances()
