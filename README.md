@@ -22,3 +22,8 @@ Para guardar el modelo
 ```
 model.save('word2vec.model')
 ```
+
+Para distancia de coseno entre dos textos convertidos a arreglos.
+```
+coseno = model.wv.wmdistance(first_array, second_array)
+```
