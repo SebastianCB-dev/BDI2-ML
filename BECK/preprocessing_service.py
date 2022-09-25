@@ -75,6 +75,13 @@ class Preprocesamiento:
     return texto
 
   def eliminar_emojis(self, texto: str) -> str:
+    """
+    > Toma un string y elimina los emojis
+    
+    :param texto: str
+    :type texto: str
+    :return: una cadena sin emojis.
+    """
     return emoji.replace_emoji(texto, "")
 
   def eliminacion_data_inutil(self, texto: str) -> str:
@@ -102,12 +109,26 @@ class Preprocesamiento:
 
 
   def stop_words(self, text: str) -> list[str]:
+    """
+    It takes a string of text, tokenizes it, and returns a list of words that are not stopwords
+    
+    :param text: The text to be tokenized
+    :type text: str
+    :return: A list of words that are not stopwords.
+    """
     text_tokens = word_tokenize(text)
     tokens_without_sw = [
       word for word in text_tokens if not word in self.all_stopwords]
     return tokens_without_sw
 
   def lematizacion(self, words: list[str]) -> list[str]:
+    """
+    It takes a list of words and returns a list of lemmas.
+    
+    :param words: list[str]
+    :type words: list[str]
+    :return: A list of lemmas
+    """
     new_words = []
     for word in words:
       result = self.stNLP(word)
@@ -116,6 +137,13 @@ class Preprocesamiento:
     return new_words
 
   def correccion_ortografica(self, texto: str) -> str:
+    """
+    It takes a string, splits it into words, checks each word against the dictionary, and if it's not in the dictionary, it tries to find the closest match. If it can't find a match, it just uses the original word
+    
+    :param texto: str
+    :type texto: str
+    :return: A string
+    """
     # Correccion Ortografica
     arr = texto.split(" ")
     result = ""
