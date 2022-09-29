@@ -1,9 +1,13 @@
 import json
+from xml.etree.ElementTree import Comment
 import pandas as pd
 from gensim.models import Word2Vec
 from pprint import pprint
+import numpy as np
+from sklearn.metrics import euclidean_distances
 from preprocessing_service import Preprocesamiento
 # Leer información del archivo items.json y de comentariostest
+
 comments_array = list(open('./comentarios_test.txt', 'r', encoding='utf-8').readlines())
 
 beck_data_preprocessing = {}
@@ -22,6 +26,7 @@ preprocesamiento = Preprocesamiento()
 comment_test = preprocesamiento.preprocesamiento_con_ortografia(comments_array[0])
 
 array_item = []
+
 for key in beck_data_preprocessing["Pensamiento o deseos suicidas"].keys():
   array_item.append(beck_data_preprocessing["Pensamiento o deseos suicidas"][key]["data"])
 
@@ -32,3 +37,9 @@ for item in array_item:
   coseno = model.wv.wmdistance(comment_test, item)
   print(f'Item BECK {i} distancia coseno: ${coseno}')
   i += 1
+  
+i=0
+for item in array_item:
+  euclidean_distances=np.linalg.norm(model.wv[comment_test]-model.wv[item])
+  print(f'Item BECK {i} distancia ecuclidiana: ${euclidean_distances}')
+  i +=1
