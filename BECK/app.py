@@ -6,6 +6,9 @@ from pprint import pprint
 import numpy as np
 from sklearn.metrics import euclidean_distances
 from preprocessing_service import Preprocesamiento
+import nltk
+#nltk.download('punkt')
+
 # Leer información del archivo items.json y de comentariostest
 
 comments_array = list(open('./comentarios_test.txt', 'r', encoding='utf-8').readlines())
