@@ -1,18 +1,17 @@
 import json
-from xml.etree.ElementTree import Comment
-import pandas as pd
-from gensim.models import Word2Vec
 from pprint import pprint
 import numpy as np
 from sklearn.metrics import euclidean_distances
+
 from preprocessing_service import Preprocesamiento
-import nltk
+from model_word2vec_service import ModelWord2Vec
+#import nltk
 #nltk.download('punkt')
 
-# Leer información del archivo items.json y de comentariostest
-
+# Leer información del archivo items.json y de comentarios test
 comments_array = list(open('./comentarios_test.txt', 'r', encoding='utf-8').readlines())
 
+# Leer información del archivo item_preprocess.json
 beck_data_preprocessing = {}
 try:
   if open('./JSON/items_preprocessing.json', 'r'):
@@ -20,29 +19,27 @@ try:
 except Exception as e:
   print(f'Error: {e}')  
 
-# pprint(beck_data_preprocessing)
-#!Vector Space Embedding
-model = Word2Vec.load('word2vec.model')
 
+# Vector Space Embedding
+w2v = ModelWord2Vec()
 preprocesamiento = Preprocesamiento()
 
 comment_test = preprocesamiento.preprocesamiento_con_ortografia(comments_array[0])
 
 array_item = []
 
-for key in beck_data_preprocessing["Pensamiento o deseos suicidas"].keys():
-  array_item.append(beck_data_preprocessing["Pensamiento o deseos suicidas"][key]["data"])
+item_string = 'Tristeza'
+for key in beck_data_preprocessing[item_string].keys():
+  array_item.append(beck_data_preprocessing[item_string][key]["data"])
 
-print(f"Vector de 'suicidar' {model.wv['llorar']}")
 print(comment_test)
 i = 0
 for item in array_item:
-  coseno = model.wv.wmdistance(comment_test, item)
-  print(f'Item BECK {i} distancia coseno: ${coseno}')
+  coseno = w2v.get_cosine_distance(item, comment_test) 
+  print(f'{item_string} - Item BECK {i} distancia coseno: ${coseno}')
   i += 1
-  
-i=0
+
 for item in array_item:
-  euclidean_distances=np.linalg.norm(model.wv[comment_test]-model.wv[item])
-  print(f'Item BECK {i} distancia ecuclidiana: ${euclidean_distances}')
-  i +=1
+  euclidian = w2v.get_euclidian_distance(item, comment_test)
+  print(f'{item_string} - Item BECK {i} distancia euclidian: ${euclidian}')
+  i += 1

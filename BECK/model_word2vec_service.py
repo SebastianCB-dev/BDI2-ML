@@ -6,6 +6,9 @@ class ModelWord2Vec:
   def __init__(self):
     self.model = Word2Vec.load('word2vec.model')
 
+  def get_model(self):
+    return self.model
+  
   def add_corpus(self, corpus: list[str]):
     self.model.build_vocab(corpus)
     self.save_model()
