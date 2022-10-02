@@ -25,7 +25,7 @@ class Preprocesamiento:
     self.sp = spacy.load('es_core_news_md')
     self.all_stopwords = self.sp.Defaults.stop_words
 
-  def preprocesamiento_con_ortografia(self, texto: str) -> list[str]:
+  def preprocesamiento_con_ortografia(self, texto):
     """
     Preprocesamiento
     Función que hace el llamado a otras funciones con el fin de limpiar el texto de entrada.
@@ -42,7 +42,7 @@ class Preprocesamiento:
     return texto
 
 
-  def preprocesamiento_sin_ortografia(self, texto: str) -> list[str]:
+  def preprocesamiento_sin_ortografia(self, texto):
     """
     Preprocesamiento
     Función que hace el llamado a otras funciones con el fin de limpiar el texto de entrada.
@@ -57,7 +57,7 @@ class Preprocesamiento:
     texto = self.lematizacion(texto)
     return texto
   
-  def eliminar_etiquetados(self, texto: str) -> str:
+  def eliminar_etiquetados(self, texto):
     """_summary_
 
     Args:
@@ -74,7 +74,7 @@ class Preprocesamiento:
     texto = " ".join(texto_no_etiquetas)
     return texto
 
-  def eliminar_emojis(self, texto: str) -> str:
+  def eliminar_emojis(self, texto):
     """
     > Toma un string y elimina los emojis
     
@@ -84,7 +84,7 @@ class Preprocesamiento:
     """
     return emoji.replace_emoji(texto, "")
 
-  def eliminacion_data_inutil(self, texto: str) -> str:
+  def eliminacion_data_inutil(self, texto):
     '''
       Esta función limpia y tokeniza el texto en palabras individuales.
       El orden en el que se va limpiando el texto no es arbitrario.
@@ -108,7 +108,7 @@ class Preprocesamiento:
     return " ".join(nuevo_texto)
 
 
-  def stop_words(self, text: str) -> list[str]:
+  def stop_words(self, text):
     """
     It takes a string of text, tokenizes it, and returns a list of words that are not stopwords
     
@@ -121,7 +121,7 @@ class Preprocesamiento:
       word for word in text_tokens if not word in self.all_stopwords]
     return tokens_without_sw
 
-  def lematizacion(self, words: list[str]) -> list[str]:
+  def lematizacion(self, words):
     """
     It takes a list of words and returns a list of lemmas.
     
@@ -136,7 +136,7 @@ class Preprocesamiento:
           [word.lemma for sent in result.sentences for word in sent.words][0])
     return new_words
 
-  def correccion_ortografica(self, texto: str) -> str:
+  def correccion_ortografica(self, texto):
     """
     It takes a string, splits it into words, checks each word against the dictionary, and if it's not in the dictionary, it tries to find the closest match. If it can't find a match, it just uses the original word
     

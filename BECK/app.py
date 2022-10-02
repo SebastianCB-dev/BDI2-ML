@@ -26,7 +26,7 @@ preprocesamiento = Preprocesamiento()
 
 comment_test = preprocesamiento.preprocesamiento_con_ortografia(comments_array[0])
 
-#w2v.add_corpus(comment_test)
+#w2v.add_corpus('null')
 
 
 array_item = []
@@ -41,8 +41,8 @@ for item in array_item:
   coseno = w2v.get_cosine_distance(item, comment_test) 
   print(f'{item_string} - Item BECK {i} distancia coseno: ${coseno}')
   i += 1
-
+i = 0
 for item in array_item:
   euclidian = w2v.get_euclidian_distance(item, comment_test)
-  print(f'{item_string} - Item BECK {i} distancia euclidian: ${euclidian}')
+  print(f'{item_string} - Item BECK {i} distancia euclidiana: ${euclidian}')
   i += 1
