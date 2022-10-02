@@ -10,7 +10,8 @@ class ModelWord2Vec:
     return self.model
   
   def add_corpus(self, corpus: list[str]):
-    self.model.build_vocab(corpus)
+    corpus = [corpus]
+    self.model.build_vocab(corpus, update=True)
     self.save_model()
 
   def save_model(self):

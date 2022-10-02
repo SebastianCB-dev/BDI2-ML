@@ -26,6 +26,9 @@ preprocesamiento = Preprocesamiento()
 
 comment_test = preprocesamiento.preprocesamiento_con_ortografia(comments_array[0])
 
+#w2v.add_corpus(comment_test)
+
+
 array_item = []
 
 item_string = 'Tristeza'
