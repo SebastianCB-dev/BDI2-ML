@@ -15,6 +15,14 @@ class Preprocesamiento:
     # lematizacion(texto)
 
   def __init__(self):
+    """
+    1. Descarga el modelo en español para la biblioteca Stanford NLP.
+    2. Cargue el modelo de idioma español para la biblioteca Stanford NLP.
+    3. Cargue el diccionario Hunspell.
+    4. Cargue el modelo en español para la biblioteca SpaCy.
+    5. Carga las palabras vacías en español
+    """
+
     stanza.download('es', package='ancora',
                              processors='tokenize,mwt,pos,lemma', verbose=True)
     self.stNLP = stanza.Pipeline(
@@ -27,11 +35,12 @@ class Preprocesamiento:
 
   def preprocesamiento_con_ortografia(self, texto):
     """
-    Preprocesamiento
-    Función que hace el llamado a otras funciones con el fin de limpiar el texto de entrada.
-    :param texto: texto sin procesar
-    :return: Texto procesado y limpiado
+    Toma una cadena, elimina hashtags, emojis y palabras vacías, y devuelve una cadena
+    
+    :param texto: El texto a ser preprocesado
+    :return: El texto está siendo devuelto.
     """
+
     # Eliminar etiquetas y hashtags
     texto = self.eliminar_etiquetados(texto)
     texto = self.eliminar_emojis(texto)
@@ -58,14 +67,13 @@ class Preprocesamiento:
     return texto
   
   def eliminar_etiquetados(self, texto):
-    """_summary_
-
-    Args:
-      texto (str): Texto con etiquetas "@" y hashtags "#"
-
-    Returns:
-      str: Texto sin etiquetas ni hashtags
-      """
+    """
+    Toma una cadena, la divide en una lista de palabras y luego vuelve a unir la lista en una cadena,
+    pero solo si la palabra no comienza con @ o #
+    
+    :param texto: El texto a limpiar
+    :return: el texto sin las etiquetas.
+    """
     texto = texto.split(" ")
     texto_no_etiquetas = []
     for word in texto:
@@ -110,11 +118,10 @@ class Preprocesamiento:
 
   def stop_words(self, text):
     """
-    It takes a string of text, tokenizes it, and returns a list of words that are not stopwords
+    Toma una cadena de texto, la tokeniza y luego elimina todas las palabras vacías
     
-    :param text: The text to be tokenized
-    :type text: str
-    :return: A list of words that are not stopwords.
+    :param text: El texto a procesar
+    :return: Una lista de palabras que no son palabras vacías.
     """
     text_tokens = word_tokenize(text)
     tokens_without_sw = [
@@ -123,11 +130,14 @@ class Preprocesamiento:
 
   def lematizacion(self, words):
     """
-    It takes a list of words and returns a list of lemmas.
+    1. Toma una lista de palabras como entrada.
+    2. Luego itera sobre cada palabra en la lista.
+    3. Para cada palabra, llama a la función stNLP, que devuelve una lista de lemas.
+    4. Luego agrega el primer lema de la lista a una nueva lista.
+    5. Devuelve la nueva lista.
     
-    :param words: list[str]
-    :type words: list[str]
-    :return: A list of lemmas
+    :param words: La lista de palabras a lematizar
+    :return: Una lista de lemas
     """
     new_words = []
     for word in words:
@@ -136,15 +146,8 @@ class Preprocesamiento:
           [word.lemma for sent in result.sentences for word in sent.words][0])
     return new_words
 
-  def correccion_ortografica(self, texto):
-    """
-    It takes a string, splits it into words, checks each word against the dictionary, and if it's not in the dictionary, it tries to find the closest match. If it can't find a match, it just uses the original word
-    
-    :param texto: str
-    :type texto: str
-    :return: A string
-    """
-    # Correccion Ortografica
+  def correccion_ortografica(self, texto):    
+    # Una función que corrige la ortografía de una palabra.
     arr = texto.split(" ")
     result = ""
     for palabra in arr:
