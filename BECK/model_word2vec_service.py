@@ -78,3 +78,17 @@ class ModelWord2Vec:
     :return: La palabra vector para la palabra.
     """
     return self.model.wv[word]
+
+  def getVectorBeck(self, commentVector, beck):
+    array = []
+    for item in beck.keys():
+      for idx, result in enumerate(beck[item].keys()): 
+        if idx == 0:
+          itemBeck = beck[item][result]
+          print(itemBeck)
+        if( self.get_cosine_distance(commentVector, itemBeck["data"]) < 
+        self.get_cosine_distance(commentVector, beck[item][result]["data"])):
+          itemBeck = beck[item][result]
+      array.append(itemBeck['value'])   
+    return array
+    
