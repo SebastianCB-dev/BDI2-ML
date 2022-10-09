@@ -85,7 +85,6 @@ class ModelWord2Vec:
       for idx, result in enumerate(beck[item].keys()): 
         if idx == 0:
           itemBeck = beck[item][result]
-          print(itemBeck)
         if( self.get_cosine_distance(commentVector, itemBeck["data"]) < 
         self.get_cosine_distance(commentVector, beck[item][result]["data"])):
           itemBeck = beck[item][result]
