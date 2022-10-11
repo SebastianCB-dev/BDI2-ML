@@ -28,7 +28,21 @@ w2v = ModelWord2Vec()
 
 comment_test = preprocesamiento.preprocesamiento_con_ortografia(
     comments_array[0])
-
+array_item = []
 # Get Vector Beck
+item_string = 'Pensamiento o deseos suicidas'
+for key in beck_data_preprocessing[item_string].keys():
+  array_item.append(beck_data_preprocessing[item_string][key]["data"])
+
+print(comment_test)
+i = 0
+for item in array_item:
+  coseno = w2v.get_cosine_distance(item, comment_test) 
+  print(f'{item_string} - Item BECK {i} distancia coseno: ${coseno}')
+  euclidian = w2v.get_euclidian_distance(["hoy", "me", "quiero", "morir"], ["no", "morir"])
+  print(f'{item_string} - Item BECK {i} distancia euclidiana: ${euclidian}')
+  i += 1
+
+
 result = w2v.getVectorBeck(comment_test, beck_data_preprocessing)
 print(result)

@@ -1,3 +1,4 @@
+from pprint import pprint
 from gensim.models import Word2Vec
 import numpy as np
 
@@ -42,22 +43,27 @@ class ModelWord2Vec:
     :param corpus_b: El segundo corpus a comparar
     :return: La distancia euclidiana entre dos vectores.
     """
-    if len(corpus_a) !=len(corpus_b) :
-      diferencia= -(len(corpus_a) -len(corpus_b)) 
-      if len(corpus_a) > len(corpus_b):
+    vector_corpus_a = self.get_word_vector(corpus_a)
+    vector_corpus_a = list(np.array(vector_corpus_a).tolist())
+    vector_corpus_b = self.get_word_vector(corpus_b)
+    vector_corpus_b = list(np.array(vector_corpus_b).tolist())
+    #Diferencia entre ambos
+    if len(vector_corpus_a) != len( vector_corpus_b):
+      diferencia = abs(len(vector_corpus_a) - len( vector_corpus_b)) 
+      if len(vector_corpus_a) > len( vector_corpus_b):
             i = 0
             while i < diferencia:
-              corpus_b.append(0)
+              vector_corpus_b.append(self.getVector250())
               i += 1
-            return np.linalg.norm(self.model.wv[corpus_a] - self.model.wv[corpus_b])
-      if len(corpus_a) < len(corpus_b):
+            return np.linalg.norm(np.array(vector_corpus_a) - np.array(vector_corpus_b))
+      if len(vector_corpus_a) < len(vector_corpus_b):
             i = 0
             while i < diferencia:
-              corpus_a.append(0)
+              vector_corpus_a.append(self.getVector250())
               i += 1
-            return np.linalg.norm(self.model.wv[corpus_a] - self.model.wv[corpus_b])
+            return np.linalg.norm(np.array(vector_corpus_a) - np.array(vector_corpus_b))
     else:
-      return np.linalg.norm(self.model.wv[corpus_a] - self.model.wv[corpus_b])
+      return np.linalg.norm(np.array(vector_corpus_a) - np.array(vector_corpus_b))
 
 
   def get_cosine_distance(self, corpus_a, corpus_b):
@@ -90,4 +96,10 @@ class ModelWord2Vec:
           itemBeck = beck[item][result]
       array.append(itemBeck['value'])   
     return array
+
+  def getVector250(self):
+    return list(np.zeros(250))
+
+    
+    
     
