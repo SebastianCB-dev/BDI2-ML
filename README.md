@@ -27,3 +27,10 @@ Para distancia de coseno entre dos textos convertidos a arreglos.
 ```
 coseno = model.wv.wmdistance(first_array, second_array)
 ```
+
+## Citations
+Ofir Pele and Michael Werman "A linear time histogram metric for improved SIFT matching" &lt;http://www.cs.huji.ac.il/\~werman/Papers/ECCV2008.pdf&gt;_
+
+Ofir Pele and Michael Werman "Fast and robust earth mover's distances" &lt;https://ieeexplore.ieee.org/document/5459199/&gt;_
+
+Matt Kusner et al. "From Word Embeddings To Document Distances" &lt;http://proceedings.mlr.press/v37/kusnerb15.pdf&gt;

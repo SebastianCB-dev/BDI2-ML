@@ -3,6 +3,7 @@ from preprocessing_service import Preprocesamiento
 import json
 import pprint
 from model_word2vec_service import ModelWord2Vec
+
 df = pd.read_excel("./datasets/DATASET_ENTRENAMIENTO.xlsx",index_col=[1,2]).reset_index()
 comments = list(df["text"])
 classes =  list(df["class"])
@@ -48,8 +49,9 @@ for comment in comments:
     new_comment["Clase"] =  classes[class_comment]
     df_cve = df_cve.append(new_comment, ignore_index=True)
     class_comment += 1
-  except Exception: 
+  except Exception as e: 
     print(f'Error en el comentario {class_comment} omitiendo...')
+    print(e)
     class_comment += 1
     continue
 
