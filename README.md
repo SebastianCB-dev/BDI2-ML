@@ -38,7 +38,7 @@ pip3 install emoji nltk sklearn spacy stanza wheel hunspell numpy gensim pyemd
 
   ```
   python -m spacy download es_core_news_md
-  pytho3 -m spacy download es_core_news_md
+  python3 -m spacy download es_core_news_md
   ```
 ## Data
 Para entrenar mas corpus al modelo
