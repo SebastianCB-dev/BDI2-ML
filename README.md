@@ -7,7 +7,40 @@ Lo que se hace:
 * punctuaction sign removal
 * Hashtags and mentions removal
 
-#### Data
+# Módulos
+* emoji 
+* nltk
+* sklearn
+* spacy 
+* stanza
+* wheel
+* hunspell
+* numpy
+* gensim
+* pyemd
+```
+pip install emoji nltk sklearn spacy stanza wheel hunspell numpy gensim pyemd
+```
+o
+```
+pip3 install emoji nltk sklearn spacy stanza wheel hunspell numpy gensim pyemd
+```
+
+# Errores:
+1. Error al instalar hunspell:
+   - Se solventa instalando libhunspell-dev (Ubuntu)
+  
+  ```
+  sudo apt-get install libhunspell-dev
+  ```
+2. Error con modelo 'es_core_news_md' de Spacy:
+   - Se solventa descargandolo:
+
+  ```
+  python -m spacy download es_core_news_md
+  pytho3 -m spacy download es_core_news_md
+  ```
+## Data
 Para entrenar mas corpus al modelo
 ```
 model.build_vocab(data)
