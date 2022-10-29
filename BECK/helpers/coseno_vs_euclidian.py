@@ -4,7 +4,7 @@ import json
 import pprint
 from model_word2vec_service import ModelWord2Vec
 
-df = pd.read_excel("./datasets/DATASET_ENTRENAMIENTO.xlsx",index_col=[1,2]).reset_index()
+df = pd.read_csv("../DATASET_ENTRENAMIENTO.csv", encoding='latin-1')
 comments = list(df["text"])
 classes =  list(df["class"])
 
@@ -14,7 +14,7 @@ comment_0 = comments[0]
 preprocesamiento = Preprocesamiento()
 
 w2v = ModelWord2Vec()
-df_cve = pd.read_csv('./coseno_vs_euclidian.csv')
+df_cve = pd.read_csv('../coseno.csv')
 columns = list(df_cve.columns)[2:]
 
 # Lectura beck
@@ -39,11 +39,8 @@ for comment in comments:
     w2v.add_corpus(comment_preprocesado)
     for item in beck_data_preprocessing.keys():
       for result in beck_data_preprocessing[item].keys():
-        new_comment[columns[contador]] = w2v.get_cosine_distance(comment_preprocesado, beck_data_preprocessing[item][result]["data"])
-        contador += 1
-        new_comment[columns[contador]] = w2v.get_euclidian_distance(comment_preprocesado, beck_data_preprocessing[item][result]["data"])
-        # new_comment[columns[contador]] = 0
-        contador += 1
+        new_comment[columns[contador]] = w2v.get_cosine_similarity(comment_preprocesado, beck_data_preprocessing[item][result]["data"])
+        contador += 1      
 
     # Add to dataframe
     new_comment["Clase"] =  classes[class_comment]

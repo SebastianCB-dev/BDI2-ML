@@ -66,7 +66,7 @@ class ModelWord2Vec:
       return np.linalg.norm(np.array(vector_corpus_a) - np.array(vector_corpus_b))
 
 
-  def get_cosine_distance(self, corpus_a, corpus_b):
+  def get_cosine_similarity(self, corpus_a, corpus_b):
     """
     La función toma dos cadenas como entrada y devuelve la distancia del coseno entre las dos cadenas.
     
@@ -74,7 +74,7 @@ class ModelWord2Vec:
     :param corpus_b: El corpus para comparar con el corpus_a corpus
     :return: La distancia del coseno entre los dos corpus.
     """
-    return self.model.wv.wmdistance(corpus_a, corpus_b)
+    return self.model.wv.n_similarity(corpus_a, corpus_b)
 
   def get_word_vector(self, word):
     """
