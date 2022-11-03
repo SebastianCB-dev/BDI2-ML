@@ -49,7 +49,7 @@ class Preprocesamiento:
     texto = self.correccion_ortografica(texto)
     texto = self.stop_words(texto)
     texto = self.lematizacion(texto)
-    texto = self.eliminar_duplicados(texto)
+    #texto = self.eliminar_duplicados(texto)
     return texto
 
 
@@ -67,7 +67,7 @@ class Preprocesamiento:
     texto = self.eliminacion_data_inutil(texto)
     texto = self.stop_words(texto)
     texto = self.lematizacion(texto)
-    texto = self.eliminar_duplicados(texto)
+    #texto = self.eliminar_duplicados(texto)
     return texto
   
   def eliminar_etiquetados(self, texto):
