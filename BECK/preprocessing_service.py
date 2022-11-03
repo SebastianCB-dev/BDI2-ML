@@ -42,12 +42,14 @@ class Preprocesamiento:
     """
 
     # Eliminar etiquetas y hashtags
+    texto = self.normalizar(texto)
     texto = self.eliminar_etiquetados(texto)
     texto = self.eliminar_emojis(texto)
     texto = self.eliminacion_data_inutil(texto)
     texto = self.correccion_ortografica(texto)
     texto = self.stop_words(texto)
     texto = self.lematizacion(texto)
+    texto = self.eliminar_duplicados(texto)
     return texto
 
 
@@ -59,11 +61,13 @@ class Preprocesamiento:
     :return: Texto procesado y limpiado
     """
     # Eliminar etiquetas y hashtags
+    texto = self.normalizar(texto)
     texto = self.eliminar_etiquetados(texto)
     texto = self.eliminar_emojis(texto)
     texto = self.eliminacion_data_inutil(texto)
     texto = self.stop_words(texto)
     texto = self.lematizacion(texto)
+    texto = self.eliminar_duplicados(texto)
     return texto
   
   def eliminar_etiquetados(self, texto):
@@ -99,9 +103,7 @@ class Preprocesamiento:
       El listado de signos de puntuación se ha obtenido de: print(string.punctuation)
       y re.escape(string.punctuation)
     '''
-
-    # Se convierte todo el texto a minúsculas
-    nuevo_texto = texto.lower()
+    nuevo_texto = texto
     # Eliminación de páginas web (palabras que empiezan por "http")
     nuevo_texto = re.sub('http\S+', ' ', nuevo_texto)
     # Eliminación de signos de puntuación
@@ -162,3 +164,27 @@ class Preprocesamiento:
       result += res + " "
     result = result.strip()
     return result
+
+  def normalizar(self, texto):
+    """
+    1. Toma texto como entrada.
+    2. Convierte el texto a minusculas.
+    3. Reemplaza las letras con tildes por letras normales.
+
+    :param words: Texto a convertir
+    :return: Texto transformado
+    """
+    texto = texto.lower()
+
+    texto = re.sub('á', 'a', texto)
+    texto = re.sub('é', 'e', texto)
+    texto = re.sub('í', 'i', texto)
+    texto = re.sub('ó', 'o', texto)
+    texto = re.sub('ú', 'u', texto)
+    texto = re.sub('ü', 'u', texto)
+    texto = re.sub('ñ', 'n', texto)
+
+    return texto
+
+  def eliminar_duplicados(self, lista):
+    return list(set(lista))
