@@ -33,7 +33,7 @@ for comment in comments:
     new_comment = {}
     contador = 0
     new_comment["Comentario"] = comment
-    comment_preprocesado = preprocesamiento.preprocesamiento_sin_ortografia(
+    comment_preprocesado = preprocesamiento.preprocesamiento_con_ortografia(
         comment)
     new_comment["Comentario Preprocesado"] = comment_preprocesado
     w2v.add_corpus(comment_preprocesado)

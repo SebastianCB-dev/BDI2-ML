@@ -8,7 +8,7 @@ class ModelWord2Vec:
     """
     La función toma una lista de palabras y devuelve una lista de vectores.
     """
-    self.model = Word2Vec.load('word2vec.model')
+    self.model = Word2Vec.load('./depresion.model')
 
   def get_model(self):
     """
@@ -32,39 +32,7 @@ class ModelWord2Vec:
     """
     Esta funcion guarda el modelo
     """
-    self.model.save('word2vec.model')
-
-  def get_euclidian_distance(self, corpus_a, corpus_b):
-    """
-    Si la longitud de las dos listas no es igual, agregue ceros a la lista más corta hasta que sean
-    iguales. Luego, devuelva la distancia euclidiana entre las dos listas.
-    
-    :param corpus_a: El primer corpus a comparar
-    :param corpus_b: El segundo corpus a comparar
-    :return: La distancia euclidiana entre dos vectores.
-    """
-    vector_corpus_a = self.get_word_vector(corpus_a)
-    vector_corpus_a = list(np.array(vector_corpus_a).tolist())
-    vector_corpus_b = self.get_word_vector(corpus_b)
-    vector_corpus_b = list(np.array(vector_corpus_b).tolist())
-    #Diferencia entre ambos
-    if len(vector_corpus_a) != len( vector_corpus_b):
-      diferencia = abs(len(vector_corpus_a) - len( vector_corpus_b)) 
-      if len(vector_corpus_a) > len( vector_corpus_b):
-            i = 0
-            while i < diferencia:
-              vector_corpus_b.append(self.getVector250())
-              i += 1
-            return np.linalg.norm(np.array(vector_corpus_a) - np.array(vector_corpus_b))
-      if len(vector_corpus_a) < len(vector_corpus_b):
-            i = 0
-            while i < diferencia:
-              vector_corpus_a.append(self.getVector250())
-              i += 1
-            return np.linalg.norm(np.array(vector_corpus_a) - np.array(vector_corpus_b))
-    else:
-      return np.linalg.norm(np.array(vector_corpus_a) - np.array(vector_corpus_b))
-
+    self.model.save('depresion.model')
 
   def get_cosine_similarity(self, corpus_a, corpus_b):
     """

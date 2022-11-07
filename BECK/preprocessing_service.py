@@ -42,14 +42,14 @@ class Preprocesamiento:
     """
 
     # Eliminar etiquetas y hashtags
-    texto = self.normalizar(texto)
     texto = self.eliminar_etiquetados(texto)
     texto = self.eliminar_emojis(texto)
     texto = self.eliminacion_data_inutil(texto)
     texto = self.correccion_ortografica(texto)
+    texto = self.normalizar(texto)
     texto = self.stop_words(texto)
     texto = self.lematizacion(texto)
-    #texto = self.eliminar_duplicados(texto)
+    texto = self.eliminar_duplicados(texto)
     return texto
 
 
