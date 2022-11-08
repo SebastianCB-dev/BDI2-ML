@@ -6,6 +6,8 @@ Lo que se hace:
 * emoji removal
 * punctuaction sign removal
 * Hashtags and mentions removal
+* Lemmatization
+* Normalization
 
 # Módulos
 * emoji 
