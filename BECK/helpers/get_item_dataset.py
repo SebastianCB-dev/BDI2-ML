@@ -1,70 +1,42 @@
-from cmath import inf
 import pandas as pd
-from pprint import pprint
-
-df = pd.read_csv('./datasets/coseno_vs_euclidian.csv')
-values_items_largos = [0, 1, 1, 2, 2, 3, 3]
-df_results = pd.read_csv('./results.csv')
+import numpy as np
+df = pd.read_csv('./comentarios_coseno_distancia', encoding='utf-8')
+df_coseno = pd.read_csv(
+    'drive/MyDrive/word_embedding_spanish/dataset_entrenamiento_coseno.csv', encoding='utf-8', delimiter=';')
+array = []
+items = list(df_coseno.columns)
 classes = list(df['Clase'])
-class_idx = 0
-columns = list(df_results.columns)[2:]
-for i in range(0, 7068):
-  column = 0
-  comment = list(df.iloc[i])
-  result = {}
-  result['Comentario'] = comment[0]
-  result['Comentario Preprocesado'] = comment[1]
-  rest_comment = comment[-29:-1]
-  comment = comment[2:-29]
-  for i in range(0, len(comment), 8):
-    data = comment[i:(i+8)]
-    # Euclidian
-    menor_euclidian = inf
-    menor_euclidian_idx = 0
-    #Coseno
-    menor_coseno = inf
-    menor_coseno_idx = 0
-    # Coseno
-    for idx, i2 in enumerate(range(0, len(data), 2)):
-      if data[i2] < menor_coseno:
-        menor_coseno = data[i2]
-        menor_coseno_idx = idx
-    # Euclidian
-    for idx, i3 in enumerate(range(1, len(data), 2)):
-      if data[i3] < menor_euclidian:
-        menor_euclidian = data[i3]
-        menor_euclidian_idx = idx
-    result[columns[column]] = menor_coseno_idx
-    column += 1
-    result[columns[column]] = menor_euclidian_idx
-    column += 1
-  # Anormal items
-  for i in range(0, len(rest_comment), 14):
-    data = rest_comment[i:(i+14)]
-    # Euclidian
-    menor_euclidian = inf
-    menor_euclidian_idx = 0
-    #Coseno
-    menor_coseno = inf
-    menor_coseno_idx = 0
-    # Coseno
-    for idx, i2 in enumerate(range(0, len(data), 2)):
-      if data[i2] < menor_coseno:
-        menor_coseno = data[i2]
-        menor_coseno_idx = idx
-    # Euclidian
-    for idx, i3 in enumerate(range(1, len(data), 2)):
-      if data[i3] < menor_euclidian:
-        menor_euclidian = data[i3]
-        menor_euclidian_idx = idx
-    result[columns[column]] = values_items_largos[menor_coseno_idx]
-    column += 1
-    result[columns[column]] = values_items_largos[menor_euclidian_idx]
-    column += 1
-
-  result['Clase'] = classes[class_idx]
-  class_idx += 1
-  df_results = df_results.append(result, ignore_index=True)
-
-
-df_results.to_csv('results_coseno_euclidian.csv', index=False)
+items_raros = [0, 1, 1, 2, 2, 3, 3]
+comment_count = 0
+for i in range(0, len(df.index)):
+  comment = list(df.copy().iloc[i])[2:][:-1]
+  normal = list(
+      np.array(comment.copy()[:60] + comment.copy()[67:71] + comment.copy()[78:]))
+  special = list(np.array(comment.copy()[60:67] + comment.copy()[71:78]))
+  comment_data = {}
+  item_count = 0
+  for index in range(0, len(normal), 4):
+    item = normal[index: index + 4]
+    mayor = 0
+    mayor_idx = 0
+    # print(item)
+    for index, result in enumerate(item):
+      if result > mayor:
+        mayor = result
+        mayor_idx = index
+    comment_data[items[item_count]] = mayor_idx
+    item_count += 1
+  for index2 in range(0, len(special), 7):
+    item2 = special[index2: index2 + 7]
+    mayor2 = 0
+    mayor_idx2 = 0
+    for index2, result2 in enumerate(item2):
+      if result2 > mayor2:
+        mayor2 = result2
+        mayor_idx2 = index2
+    comment_data[items[item_count]] = items_raros[mayor_idx2]
+    item_count += 1
+  comment_data['Clase'] = classes[comment_count]
+  comment_count += 1
+  df_coseno = df_coseno.append(comment_data, ignore_index=True)
+df_coseno.to_csv('dataset_entrenamiento.csv', index=False, encoding="utf-8")
