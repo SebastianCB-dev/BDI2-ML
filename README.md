@@ -21,12 +21,14 @@ Lo que se hace:
 * gensim
 * pyemd
 * joblib
+* skicit-learn
 ```
-pip install emoji nltk sklearn spacy stanza wheel hunspell numpy gensim pyemd joblib
+pip install emoji nltk sklearn spacy stanza wheel hunspell numpy gensim pyemd joblib scikit-learn
+```
 ```
 o
 ```
-pip3 install emoji nltk sklearn spacy stanza wheel hunspell numpy gensim pyemd
+pip3 install emoji nltk sklearn spacy stanza wheel hunspell numpy gensim pyemd joblib scikit-learn
 ```
 
 # Errores:
