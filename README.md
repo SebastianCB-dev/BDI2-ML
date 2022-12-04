@@ -20,8 +20,9 @@ Lo que se hace:
 * numpy
 * gensim
 * pyemd
+* joblib
 ```
-pip install emoji nltk sklearn spacy stanza wheel hunspell numpy gensim pyemd
+pip install emoji nltk sklearn spacy stanza wheel hunspell numpy gensim pyemd joblib
 ```
 o
 ```
