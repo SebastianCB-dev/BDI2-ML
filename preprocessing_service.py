@@ -37,13 +37,12 @@ class Preprocesamiento:
 
   def preprocesamiento_con_ortografia(self, texto):
     """
-    Toma una cadena, elimina hashtags, emojis y palabras vacías, y devuelve una cadena
+    Toma una cadena, elimina emojis, elimina datos inútiles, corrige ortografía, normaliza, lematiza,
+    elimina palabras vacías y elimina duplicados.
     
-    :param texto: El texto a ser preprocesado
-    :return: El texto está siendo devuelto.
+    :param texto: El texto a procesar
+    :return: El texto preprocesado.
     """
-
-    # Eliminar etiquetas y hashtags
     try:
       texto = self.eliminar_etiquetados(texto)
       texto = self.eliminar_emojis(texto)
@@ -59,23 +58,27 @@ class Preprocesamiento:
     except:
       return ""
 
-
   def preprocesamiento_sin_ortografia(self, texto):
     """
-    Preprocesamiento
-    Función que hace el llamado a otras funciones con el fin de limpiar el texto de entrada.
-    :param texto: texto sin procesar
-    :return: Texto procesado y limpiado
+    Toma una cadena, elimina emojis, elimina datos inútiles, normaliza, lematiza,
+    elimina palabras vacías y elimina duplicados.
+
+    :param texto: El texto a procesar
+    :return: El texto preprocesado.
     """
-    # Eliminar etiquetas y hashtags
-    texto = self.normalizar(texto)
-    texto = self.eliminar_etiquetados(texto)
-    texto = self.eliminar_emojis(texto)
-    texto = self.eliminacion_data_inutil(texto)
-    texto = self.stop_words(texto)
-    texto = self.lematizacion(texto)
-    #texto = self.eliminar_duplicados(texto)
-    return texto
+    try:
+      texto = self.eliminar_etiquetados(texto)
+      texto = self.eliminar_emojis(texto)
+      texto = self.eliminacion_data_inutil(texto)
+      texto = self.normalizar(texto)
+      texto = texto.split(" ")
+      texto = self.lematizacion(texto)
+      texto = " ".join(texto)
+      texto = self.stop_words(texto)
+      texto = self.eliminar_duplicados(texto)
+      return texto
+    except:
+      return ""
   
   def eliminar_etiquetados(self, texto):
     """
@@ -156,7 +159,12 @@ class Preprocesamiento:
     return new_words
 
   def correccion_ortografica(self, texto):    
-    # Una función que corrige la ortografía de una palabra.
+    """
+    Toma una cadena y corrige la palabra si es necesario
+    
+    :param texto: El texto a corregir
+    :return: Una cadena con el texto corregido.
+    """
     arr = texto.split(" ")
     result = ""
     for palabra in arr:
@@ -194,4 +202,10 @@ class Preprocesamiento:
     return texto
 
   def eliminar_duplicados(self, lista):
+    """
+    Toma una lista como argumento y devuelve una lista con todos los duplicados eliminados
+    
+    :param lista: lista de cadenas
+    :return: Una lista de elementos únicos de la lista.
+    """
     return list(set(lista))
