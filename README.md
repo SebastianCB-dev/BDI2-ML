@@ -44,6 +44,7 @@ pip3 install emoji nltk sklearn spacy stanza wheel hunspell numpy gensim pyemd j
   python -m spacy download es_core_news_md
   python3 -m spacy download es_core_news_md
   ```
+3. Si hay un error con la importación del modelo de Regresión Logistica, instale otra versión de skicit-learn
 ## Data
 Para entrenar mas corpus al modelo
 ```
