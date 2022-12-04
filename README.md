@@ -25,7 +25,6 @@ Lo que se hace:
 ```
 pip install emoji nltk sklearn spacy stanza wheel hunspell numpy gensim pyemd joblib scikit-learn
 ```
-```
 o
 ```
 pip3 install emoji nltk sklearn spacy stanza wheel hunspell numpy gensim pyemd joblib scikit-learn
