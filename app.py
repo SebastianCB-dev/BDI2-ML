@@ -7,7 +7,7 @@ w2v = ModelWord2Vec()
 clf = joblib.load('./models/logistic_regression.pkl')
 
 #comentario = "Me quiero suicidar este día no puede ser peor que el de ayer mi padre me odio y mi madre no me quiere ver"
-comentario = "Hoy juega Chelsea vs Barcelona y me siento emocionado"
+comentario = "Me quiero suicidar este día no puede ser peor que el de ayer mi padre me odio y mi madre no me quiere ver"
 # Preprocesado del comentario
 comentario_procesado = pp.preprocesamiento_con_ortografia(comentario)
 if comentario_procesado == "":
