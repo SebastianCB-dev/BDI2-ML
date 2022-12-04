@@ -6,9 +6,9 @@ pp = Preprocesamiento()
 w2v = ModelWord2Vec()
 clf = joblib.load('./models/logistic_regression.pkl')
 
-comentario = "Estoy muy triste y no se que hacer"
 # Escribe un comentario triste y largo
-comentario = "Estoy muy triste y no se que hacer es un día nublado y esta lloviendo"
+#comentario = "Me quiero suicidar este día no puede ser peor que el de ayer mi padre me odio y mi madre no me quiere ver"
+comentario = "Hoy me siento feliz debido a que fue mi grado. La exposición salio todo y bien y me siento querido por mi familia"
 # Preprocesado del comentario
 comentario_procesado = pp.preprocesamiento_con_ortografia(comentario)
 # Obtener la similitud de coseno entre el comentario y 
