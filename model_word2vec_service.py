@@ -61,15 +61,15 @@ class ModelWord2Vec:
     :return: La palabra vector para la palabra.
     """
     array_result = []
-    # TODO en error añadir al vocabulario y volver a llamar a la función
     for word in corpus:
       try:
         array_result.append(self.model.wv[word])
-      except:
-        array_result.append(self.getVector250())
+      except Exception as e:
+        return self.getVector250()
     return array_result
 
   def get_cosine_similarity_BECK(self, corpus):
+    self.add_corpus(corpus)
     beck = self.get_beck()
     data = []
     for item in beck.keys():
