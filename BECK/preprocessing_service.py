@@ -1,5 +1,7 @@
 import emoji
 import re
+import nltk
+nltk.download('punkt')
 from nltk.tokenize import word_tokenize
 import spacy
 import stanza
@@ -47,8 +49,10 @@ class Preprocesamiento:
     texto = self.eliminacion_data_inutil(texto)
     texto = self.correccion_ortografica(texto)
     texto = self.normalizar(texto)
-    texto = self.stop_words(texto)
+    texto = texto.split(" ")
     texto = self.lematizacion(texto)
+    texto = " ".join(texto)
+    texto = self.stop_words(texto)
     texto = self.eliminar_duplicados(texto)
     return texto
 
