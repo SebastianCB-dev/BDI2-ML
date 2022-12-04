@@ -44,17 +44,20 @@ class Preprocesamiento:
     """
 
     # Eliminar etiquetas y hashtags
-    texto = self.eliminar_etiquetados(texto)
-    texto = self.eliminar_emojis(texto)
-    texto = self.eliminacion_data_inutil(texto)
-    texto = self.correccion_ortografica(texto)
-    texto = self.normalizar(texto)
-    texto = texto.split(" ")
-    texto = self.lematizacion(texto)
-    texto = " ".join(texto)
-    texto = self.stop_words(texto)
-    texto = self.eliminar_duplicados(texto)
-    return texto
+    try:
+      texto = self.eliminar_etiquetados(texto)
+      texto = self.eliminar_emojis(texto)
+      texto = self.eliminacion_data_inutil(texto)
+      texto = self.correccion_ortografica(texto)
+      texto = self.normalizar(texto)
+      texto = texto.split(" ")
+      texto = self.lematizacion(texto)
+      texto = " ".join(texto)
+      texto = self.stop_words(texto)
+      texto = self.eliminar_duplicados(texto)
+      return texto
+    except:
+      return ""
 
 
   def preprocesamiento_sin_ortografia(self, texto):
