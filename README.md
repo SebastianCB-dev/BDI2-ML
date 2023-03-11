@@ -1,6 +1,8 @@
-## Preprocesamiento de datos
-Este es un repositorio dedicado al preprocesamiento de datos en Python usando diferentes librerías.
+# BDI2-ML
+Este es un repositorio dedicado al preprocesamiento de datos para la impresión diagnostica de sintomatología depresiva en comentarios utilizando usando diferentes librerías de Python 3.
 
+
+## Preprocesamiento de datos
 Lo que se hace:
 * stop words removal
 * emoji removal
