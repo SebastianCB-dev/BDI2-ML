@@ -1,5 +1,5 @@
 # BDI2-ML
-Este es un repositorio dedicado al preprocesamiento de datos para la impresión diagnostica de sintomatología depresiva en comentarios utilizando usando diferentes librerías de Python 3.
+Este es un repositorio dedicado al preprocesamiento de datos para la impresión diagnostica de sintomatología depresiva en comentarios implementando diferentes librerías de Python 3.
 
 
 ## Preprocesamiento de datos
